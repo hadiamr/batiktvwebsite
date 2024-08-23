@@ -73,12 +73,14 @@
     $('#summernote').summernote({
         placeholder: '',
         tabsize: 2,
-        height: 500,
+        height: 200,
         toolbar: [
+            ['style', ['style']],
             ['font', ['bold', 'underline', 'clear']],
             ['color', ['color']],
             ['para', ['ul', 'ol', 'paragraph']],
             ['table', ['table']],
+            ['image', ['resizeFull', 'resizeHalf', 'resizeQuarter', 'resizeNone']],
             ['float', ['floatLeft', 'floatRight', 'floatNone']],
             ['remove', ['removeMedia']],
             ['insert', ['link', 'unlink', 'picture', 'video']],
@@ -88,6 +90,19 @@
         'fontNames': ['Montserrat'],
         'fontNamesIgnoreCheck': ['Montserrat'],
         'fontSizes': ['16'],
-        'fontSizesIgnoreCheck': ['16']
+        'fontSizesIgnoreCheck': ['16'],
+
+        callbacks: {
+            onPaste: function(e) {
+                var bufferText = ((e.originalEvent || e).clipboardData || window.clipboardData).getData('Text');
+
+                e.preventDefault();
+
+                // Firefox fix
+                setTimeout(function() {
+                    document.execCommand('insertText', false, bufferText);
+                }, 10);
+            }
+        }
     });
 </script>
