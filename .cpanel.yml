@@ -2,8 +2,8 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/batiktv1/public_html/
-    - /bin/cp -R public_html/admin $DEPLOYPATH
-    - /bin/cp -R public_html/home $DEPLOYPATH
+    - /bin/cp -R admin $DEPLOYPATH
+    - /bin/cp -R home $DEPLOYPATH
 
     - export DEPLOYPATH2=/home/batiktv1/batiktv_core/app/
     - /bin/cp -R Controllers $DEPLOYPATH2
