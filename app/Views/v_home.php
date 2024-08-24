@@ -42,8 +42,8 @@
         </div>
     </nav>
     <!-- Masthead-->
-    <header class="masthead bg-biru text-white">
-        <div class="row justify-content-center container-fluid">
+    <header class="masthead bg-biru text-white container-fluid">
+        <div class="row justify-content-center">
             <div class="col-lg-5 text-center text-lg-start">
                 <h1 class="text-center text-lg-start"><?= $setelan->judul ?></h1>
                 <h5 class="fw-light lh-base text-center text-lg-start"><?= $setelan->deskripsi ?></h5>
