@@ -27,6 +27,7 @@
             <?php echo $news->post_content; ?>
         </div>
     </div>
+    <hr>
     <p class="artikel">Bagikan artikel:
     <div class="sharethis-inline-share-buttons"></div>
     </p>
