@@ -58,6 +58,17 @@
         }
     });
 </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6947664556061935"
+    crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-format="fluid"
+    data-ad-layout-key="-53+cd-l-7c+os"
+    data-ad-client="ca-pub-6947664556061935"
+    data-ad-slot="3301191692"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 </body>
 
 </html>
