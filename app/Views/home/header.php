@@ -17,9 +17,18 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="<?php echo base_url('home') ?>/css/styles.css" rel="stylesheet" />
+    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
 </head>
 
 <body id="page-top">
+    <amp-ad width="100vw" height="320"
+        type="adsense"
+        data-ad-client="ca-pub-6947664556061935"
+        data-ad-slot="5874080803"
+        data-auto-format="rspv"
+        data-full-width="">
+        <div overflow=""></div>
+    </amp-ad>
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg bg-campur text-uppercase fixed-top" id="mainNav">
         <div class="container">
