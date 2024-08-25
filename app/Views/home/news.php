@@ -33,7 +33,7 @@
                         <?php foreach ($news as $row) : ?>
                             <div class="col-lg-6 pb-4">
                                 <div class="position-relative rounded overflow-hidden ratio ratio-16x9">
-                                    <a href="/artikel/view/<?= $row->post_title_seo; ?>">
+                                    <a href="/news/<?= $row->post_title_seo; ?>">
                                         <?php
                                         if (!empty($row->post_thumbnail)) {
                                             echo '<img src="' . base_url("../home/assets/img/news/$row->post_thumbnail") . '" width="100%" height="100%">';
@@ -46,10 +46,10 @@
                                 <div class="d-flex align-items-center pt-4 pb-2">
                                     <i class="fas fa-clock me-2"> </i><?= $convertDate = date("d/m/Y - H:i", strtotime($row->post_time)); ?> WIB
                                 </div>
-                                <a href="/artikel/view/<?= $row->post_title_seo; ?>" style="text-decoration:none" class="h5">
+                                <a href="/news/<?= $row->post_title_seo; ?>" style="text-decoration:none" class="h5">
                                     <?= substr($row->post_title, 0, 50) ?>...
                                 </a>
-                                <div class="artikel mt-2"><?= substr($row->post_content, 0, 70) ?>... <a href="/artikel/view/<?= $row->post_title_seo; ?>" style="text-decoration:none">Selengkapnya</a></div>
+                                <div class="artikel mt-2"><?= substr($row->post_content, 0, 70) ?>... <a href="/news/<?= $row->post_title_seo; ?>" style="text-decoration:none">Selengkapnya</a></div>
                             </div>
                         <?php endforeach; ?>
                     </div>

@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="google-adsense-account" content="ca-pub-6947664556061935">
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Batik TV</title>
@@ -52,7 +53,7 @@
                         YUK CARI TAHU!
                     </a>
                 </div>
-                <div class=" my-5 py-5">
+                <div class="my-5 py-5">
                     <a target="_blank" class="btn btn-outline-light btn-social mx-1" href="<?= $setelan->facebook ?>"><i class="fab fa-fw fa-facebook-f"></i></a>
                     <a target="_blank" class="btn btn-outline-light btn-social mx-1" href="<?= $setelan->twitter ?>"><i class="fab fa-fw fa-twitter"></i></a>
                     <a target="_blank" class="btn btn-outline-light btn-social mx-1" href="<?= $setelan->instagram ?>"><i class="fab fa-fw fa-instagram"></i></a>
@@ -80,7 +81,7 @@
                     <?php foreach ($news as $row) : ?>
                         <div class="bg-light rounded px-4 pt-4 pb-4 mb-4 col-lg-7">
                             <div class="ratio ratio-16x9 position-relative rounded overflow-hidden">
-                                <a href="/artikel/view/<?= $row['post_title_seo']; ?>">
+                                <a href="/news/<?= $row['post_title_seo']; ?>">
                                     <?php
                                     if (!empty($row['post_thumbnail'])) {
                                         echo '<img src="' . base_url("../home/assets/img/news/$row[post_thumbnail]") . '" width="100%">';
@@ -93,10 +94,10 @@
                             <div class="d-flex align-items-center pt-4 pb-2">
                                 <i class="fas fa-clock me-2"> </i><?= $convertDate = date("d/m/Y - H:i", strtotime($row['post_time'])); ?> WIB
                             </div>
-                            <a href="/artikel/view/<?= $row['post_title_seo']; ?>" style="text-decoration:none" class="h4">
+                            <a href="/news/<?= $row['post_title_seo']; ?>" style="text-decoration:none" class="h4">
                                 <?= substr($row['post_title'], 0, 55) ?>...
                             </a>
-                            <div class="artikel mt-2"><?= substr($row['post_content'], 0, 150) ?>... <a href="/artikel/view/<?= $row['post_title_seo']; ?>" style="text-decoration:none">Selengkapnya</a></div>
+                            <div class="artikel mt-2"><?= substr($row['post_content'], 0, 150) ?>... <a href="/news/<?= $row['post_title_seo']; ?>" style="text-decoration:none">Selengkapnya</a></div>
                         </div>
                     <?php endforeach; ?>
                     <div class="col-lg-5 rounded px-4">
@@ -117,7 +118,7 @@
                                         </div>
                                         <div class="col-7">
                                             <div class="features-content d-flex flex-column">
-                                                <a href="/artikel/view/<?= $row['post_title_seo']; ?>" style="text-decoration:none" class="h6">
+                                                <a href="/news/<?= $row['post_title_seo']; ?>" style="text-decoration:none" class="h6">
                                                     <?= substr($row['post_title'], 0, 60) ?>...
                                                 </a>
                                                 <small><i class="fas fa-clock"></i> <?= $convertDate = date("d/m/Y", strtotime($row['post_time'])); ?></i> </small>

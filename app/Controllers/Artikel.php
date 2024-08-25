@@ -10,20 +10,20 @@ use App\Models\TayangMod;
 
 class Artikel extends BaseController
 {
-    function artikel()
-    {
-        $model = new NewsModel();
-        $data['tambah'] = "no";
-        $data['jenis'] = "news";
-        $data['judulTemp'] = "Semua Artikel";
-        if (!$this->validate([])) {
-            $data['validation'] = $this->validator;
-            $data['news'] = $model->findAll();
-            echo view('admin/v_header', $data);
-            echo view('admin/v_news', $data);
-            echo view('admin/v_footer', $data);
-        }
-    }
+    // function artikel()
+    // {
+    //     $model = new NewsModel();
+    //     $data['tambah'] = "no";
+    //     $data['jenis'] = "news";
+    //     $data['judulTemp'] = "Semua Artikel";
+    //     if (!$this->validate([])) {
+    //         $data['validation'] = $this->validator;
+    //         $data['news'] = $model->findAll();
+    //         echo view('admin/v_header', $data);
+    //         echo view('admin/v_news', $data);
+    //         echo view('admin/v_footer', $data);
+    //     }
+    // }
     function news()
     {
         $model = new NewsModel();
@@ -34,7 +34,7 @@ class Artikel extends BaseController
         if (!$this->validate([])) {
             $data['validation'] = $this->validator;
             $data['news'] = $model->where('post_type', 'article')->orderBy('post_id', 'DESC')->asObject()->paginate(15, 'no');
-                $data['pager'] = $model->pager;
+            $data['pager'] = $model->pager;
             echo view('admin/v_header', $data);
             echo view('admin/v_news', $data);
             echo view('admin/v_footer', $data);
@@ -49,7 +49,7 @@ class Artikel extends BaseController
         if (!$this->validate([])) {
             $data['validation'] = $this->validator;
             $data['news'] = $model->where('post_type', 'page')->orderBy('post_id', 'DESC')->asObject()->paginate(6, 'no');
-                $data['pager'] = $model->pager;
+            $data['pager'] = $model->pager;
             echo view('admin/v_header', $data);
             echo view('admin/v_news', $data);
             echo view('admin/v_footer', $data);

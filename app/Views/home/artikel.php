@@ -55,7 +55,7 @@
                         </div>
                         <div class="col-7">
                             <div class="features-content d-flex flex-column">
-                                <a href="/artikel/view/<?= $row['post_title_seo']; ?>" style="text-decoration:none" class="h6">
+                                <a href="/news/<?= $row['post_title_seo']; ?>" style="text-decoration:none" class="h6">
                                     <?= substr($row['post_title'], 0, 50) ?>...
                                 </a>
                                 <small><i class="fas fa-clock"></i> <?= $convertDate = date("d/m/Y", strtotime($row['post_time'])); ?></i> </small>

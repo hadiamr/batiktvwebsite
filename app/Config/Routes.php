@@ -34,8 +34,7 @@ $routes->get('logout', 'Login::logout');
 
 /** Artikel */
 $routes->get('/news', 'News::index');
-$routes->add('artikel/view/(:any)', 'Artikel::view/$1');
-$routes->add('artikel', 'Artikel::artikel');
+$routes->add('news/(:any)', 'Artikel::view/$1');
 $routes->get('/sitemap', 'Sitemap::index');
 $routes->get('/sitemap.xml', 'Sitemap::index');
 
