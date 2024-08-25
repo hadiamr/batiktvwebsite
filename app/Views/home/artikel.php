@@ -32,14 +32,6 @@
     <div class="sharethis-inline-share-buttons"></div>
     </p>
     <img class="img-fluid rounded mt-3" src="../../../home/assets/img/banner4.png">
-    <amp-ad width="100vw" height="320"
-        type="adsense"
-        data-ad-client="ca-pub-6947664556061935"
-        data-ad-slot="5874080803"
-        data-auto-format="rspv"
-        data-full-width="">
-        <div overflow=""></div>
-    </amp-ad>
 </div>
 <div class="col-lg-4">
     <div class="bg-light rounded p-4 pt-0 mb-4">
@@ -96,12 +88,4 @@
         </table>
     </div>
     <!-- <img class="img-fluid rounded" src="../../../home/assets/img/banner3.png"> -->
-    <amp-ad width="100vw" height="320"
-        type="adsense"
-        data-ad-client="ca-pub-6947664556061935"
-        data-ad-slot="7935405423"
-        data-auto-format="rspv"
-        data-full-width="">
-        <div overflow=""></div>
-    </amp-ad>
 </div>
