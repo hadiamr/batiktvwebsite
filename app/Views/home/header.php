@@ -21,14 +21,6 @@
 </head>
 
 <body id="page-top">
-    <amp-ad width="100vw" height="320"
-        type="adsense"
-        data-ad-client="ca-pub-6947664556061935"
-        data-ad-slot="5874080803"
-        data-auto-format="rspv"
-        data-full-width="">
-        <div overflow=""></div>
-    </amp-ad>
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg bg-campur text-uppercase fixed-top" id="mainNav">
         <div class="container">
