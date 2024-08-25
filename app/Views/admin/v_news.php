@@ -49,7 +49,7 @@
                             <td><?= $row->post_status; ?></td>
                             <td>
                                 <div class="d-flex justify-content-center">
-                                    <a href="/news/<?= $row->post_title_seo; ?>" class="btn btn-primary">View</a>
+                                    <a target="_blank" href="/news/<?= $row->post_title_seo; ?>" class="btn btn-primary">View</a>
                                     <a href="/artikel/edit/<?= $row->post_id; ?>" class="btn btn-primary mx-2">Edit</a>
                                     <a href="/artikel/hapus/<?= $row->post_id; ?>" class="btn btn-primary">Hapus</a>
                                 </div>

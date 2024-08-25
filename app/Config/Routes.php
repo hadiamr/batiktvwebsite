@@ -35,13 +35,12 @@ $routes->get('logout', 'Login::logout');
 /** Artikel */
 $routes->get('/news', 'News::index');
 $routes->add('news/(:any)', 'Artikel::view/$1');
-$routes->get('/sitemap', 'Sitemap::index');
 $routes->get('/sitemap.xml', 'Sitemap::index');
 
 $routes->group('/', ['filter' => 'noauth'], function ($routes) {
-    $routes->post('login', 'login::auth');
-    $routes->get('login', 'login::index');
-    $routes->get('forgot', 'login::forgot');
+    $routes->post('login', 'Login::auth');
+    $routes->get('login', 'Login::index');
+    $routes->get('forgot', 'Login::forgot');
 });
 
 $routes->group('/', ['filter' => 'auth'], function ($routes) {
