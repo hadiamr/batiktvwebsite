@@ -52,6 +52,17 @@
                                 <div class="artikel mt-2"><?= substr($row->post_content, 0, 70) ?>... <a href="/news/<?= $row->post_title_seo; ?>" style="text-decoration:none">Selengkapnya</a></div>
                             </div>
                         <?php endforeach; ?>
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6947664556061935"
+                            crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block"
+                            data-ad-format="fluid"
+                            data-ad-layout-key="-53+cd-l-7c+os"
+                            data-ad-client="ca-pub-6947664556061935"
+                            data-ad-slot="3301191692"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
                     </div>
                     <div class="row mt-3">
                         <?= $pager->links('no', 'bootstrap_pagination') ?>
