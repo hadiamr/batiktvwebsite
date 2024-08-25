@@ -40,59 +40,7 @@
 <script src="<?php echo base_url('home') ?>/js/scripts.js"></script>
 <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=66c6e11cac99040019f157e8&product=inline-share-buttons&source=platform" async="async"></script>
-<script>
-    $('.carousel .carousel-item').each(function() {
-        var minPerSlide = 4;
-        var next = $(this).next();
-        if (!next.length) {
-            next = $(this).siblings(':first');
-        }
-        next.children(':first-child').clone().appendTo($(this));
 
-        for (var i = 0; i < minPerSlide; i++) {
-            next = next.next();
-            if (!next.length) {
-                next = $(this).siblings(':first');
-            }
-            next.children(':first-child').clone().appendTo($(this));
-        }
-    });
-</script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6947664556061935"
-    crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-    style="display:block"
-    data-ad-format="fluid"
-    data-ad-layout-key="-53+cd-l-7c+os"
-    data-ad-client="ca-pub-6947664556061935"
-    data-ad-slot="3301191692"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6947664556061935"
-    crossorigin="anonymous"></script>
-<!-- banner -->
-<ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-6947664556061935"
-    data-ad-slot="5874080803"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6947664556061935"
-    crossorigin="anonymous"></script>
-<!-- sidebar -->
-<ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-6947664556061935"
-    data-ad-slot="7935405423"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 </body>
 
 </html>
