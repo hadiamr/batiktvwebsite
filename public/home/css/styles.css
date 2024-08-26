@@ -11756,3 +11756,9 @@ html {
         transform: translateX(-25%) !important;
     }
 }
+.iklan{
+  filter: brightness(1);
+}
+.iklan:hover{
+  filter: brightness(1.05);
+}
