@@ -1,713 +1,701 @@
-<!-- <?php
-$datetime = new DateTime(date('Y-m-d H:i:s'));
-?>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">>
-  <url>
-    <loc><?= base_url() ?></loc>
-    <lastmod><?= $datetime->format(DATE_ATOM); ?></lastmod>
-    <priority>1.0</priority>
-  </url>
-  <?php foreach ($url as $item) { ?>
-    <url>
-      <loc><?= base_url('/news/' . $item['post_title_seo']) ?></loc>
-      <lastmod><?= $datetime->format(DATE_ATOM); ?></lastmod>
-      <priority>0.8</priority>
-    </url>
-  <?php } ?>
-</urlset> -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
 <url>
-<loc>https://www.batiktv.id/</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>1.00</priority>
+  <loc>https://www.batiktv.id/</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/pastikan-status-pemilih--kpu-imbau-masyarakat-cek-dpt</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.batiktv.id/news/pastikan-status-pemilih--kpu-imbau-masyarakat-cek-dpt</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/warga-desa-watupayung-jalan-sehat-meriahkan-kemerdekaan-ri</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.batiktv.id/news/warga-desa-watupayung-jalan-sehat-meriahkan-kemerdekaan-ri</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/kelurahan-ramah-perempuan-dan-anak-dorong-lima-isu-besar</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.batiktv.id/news/kelurahan-ramah-perempuan-dan-anak-dorong-lima-isu-besar</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/pawai-anak-ra-kecamatan-pekalongan-utara--usung-semangat-kemerdekaan</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.batiktv.id/news/pawai-anak-ra-kecamatan-pekalongan-utara--usung-semangat-kemerdekaan</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/semangat-lansia-di-kauman--drumband-dengan-kaleng-bekas</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.batiktv.id/news/semangat-lansia-di-kauman--drumband-dengan-kaleng-bekas</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.batiktv.id/news</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/meriahkan-hut-ri-ke-79--warga-perumahan-slamaran-indah-gelar-jalan-sehat</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://www.batiktv.id/news/meriahkan-hut-ri-ke-79--warga-perumahan-slamaran-indah-gelar-jalan-sehat</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news?page_no=1</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://www.batiktv.id/news?page_no=1</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news?page_no=2</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://www.batiktv.id/news?page_no=2</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news?page_no=3</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://www.batiktv.id/news?page_no=3</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news?page_no=4</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://www.batiktv.id/news?page_no=4</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news?page_no=20</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://www.batiktv.id/news?page_no=20</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/pemkot-pekalongan-apresiasi-fgbmfi-gelar-donor-darah</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news/pemkot-pekalongan-apresiasi-fgbmfi-gelar-donor-darah</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/peringati-milad-aisyiyah-ke-105-dan-hut-ri-ke-79--tk-aba-kandang-panjang-gelar-jalan-sehat-dan-lomba-montase</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news/peringati-milad-aisyiyah-ke-105-dan-hut-ri-ke-79--tk-aba-kandang-panjang-gelar-jalan-sehat-dan-lomba-montase</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/kirab-mobil-hias-meriahkan-hari-jadi-kabupaten-pekalongan-ke-402</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news/kirab-mobil-hias-meriahkan-hari-jadi-kabupaten-pekalongan-ke-402</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/700-atlet-karate-ikuti-kejuaraan-piala-ketua-forki-kota-pekalongan</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news/700-atlet-karate-ikuti-kejuaraan-piala-ketua-forki-kota-pekalongan</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/upaya-tangani-banjir--progres-pembangunan-stasiun-pompa-tirto-lebih-cepat-dari-target</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news/upaya-tangani-banjir--progres-pembangunan-stasiun-pompa-tirto-lebih-cepat-dari-target</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/nikmatnya-martabak-manis-bertoping-melimpah</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news/nikmatnya-martabak-manis-bertoping-melimpah</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news?page_no=5</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news?page_no=5</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/ditetapkan-jadi-tersangka--ayah-bunuh-bayi-terancam-10-tahun-penjara</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news/ditetapkan-jadi-tersangka--ayah-bunuh-bayi-terancam-10-tahun-penjara</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/stok-beras-di-gudang-bulog-tegal-aman-empat-bulan</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news/stok-beras-di-gudang-bulog-tegal-aman-empat-bulan</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/dpc-pkb-kabupaten-pekalongan-serahkan-salinan-sk-kepengurusan-sah-ke-pengadilan-negeri</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news/dpc-pkb-kabupaten-pekalongan-serahkan-salinan-sk-kepengurusan-sah-ke-pengadilan-negeri</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/bupati-fadia-serahkan-bantuan-sembako-dan-kendaraan-untuk-puskesmas-dalam-upaya-cegah-stunting-dan-kematian-ibu-bayi</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news/bupati-fadia-serahkan-bantuan-sembako-dan-kendaraan-untuk-puskesmas-dalam-upaya-cegah-stunting-dan-kematian-ibu-bayi</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/tk-santo-yosep-pekalongan-adakan-pawai-karnaval-semarakkan-hut-ke-79-kemerdekaan-ri-dan-p5</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news/tk-santo-yosep-pekalongan-adakan-pawai-karnaval-semarakkan-hut-ke-79-kemerdekaan-ri-dan-p5</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/tingkatkan-pemahaman-cuaca-dan-iklim-maritim-kepada-nelayan--slcn-jawa-tengah-resmi-dibuka</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news/tingkatkan-pemahaman-cuaca-dan-iklim-maritim-kepada-nelayan--slcn-jawa-tengah-resmi-dibuka</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news?page_no=6</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news?page_no=6</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/puskesmas-optimalkan-peran-dapur-sehat-atasi-stunting</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news/puskesmas-optimalkan-peran-dapur-sehat-atasi-stunting</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/wujudkan-generasi-sehat--ribuan-pelajar-ditargetkan-terima-vaksin-hpv-dan-mr</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news/wujudkan-generasi-sehat--ribuan-pelajar-ditargetkan-terima-vaksin-hpv-dan-mr</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/pendaftaran-dimulai--pemkot-pekalongan-buka-50-formasi-cpns-2024</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news/pendaftaran-dimulai--pemkot-pekalongan-buka-50-formasi-cpns-2024</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/wakil-walikota-tutup-bimtek-perizinan-berusaha-dan-pengawasan-perizinan-berusaha</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news/wakil-walikota-tutup-bimtek-perizinan-berusaha-dan-pengawasan-perizinan-berusaha</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/wakil-walikota-salahudin--tinjau-pekerjaan-fisik-rehab-sdn-tirto-01</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news/wakil-walikota-salahudin--tinjau-pekerjaan-fisik-rehab-sdn-tirto-01</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/universitas-muhammadiyah-pekajangan-pekalongan-wisuda-180-mahasiswa</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news/universitas-muhammadiyah-pekajangan-pekalongan-wisuda-180-mahasiswa</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news?page_no=7</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news?page_no=7</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/warga-binaan-lapas-dilatih-ternak-domba</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news/warga-binaan-lapas-dilatih-ternak-domba</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/kota-pekalongan-sambut-kepulangan-rombongan-haji</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news/kota-pekalongan-sambut-kepulangan-rombongan-haji</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news?page_no=17</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news?page_no=17</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news?page_no=18</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news?page_no=18</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news?page_no=19</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://www.batiktv.id/news?page_no=19</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/kisah-inspiratif-anak-cleaning-service-dan-satpam-jadi-wisudawan-terbaik-di-umpp</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/kisah-inspiratif-anak-cleaning-service-dan-satpam-jadi-wisudawan-terbaik-di-umpp</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/semarakkan-pasar-jajan--warga-kergon-berkostum-hantu-pocong</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/semarakkan-pasar-jajan--warga-kergon-berkostum-hantu-pocong</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/polres-batang-ungkap-pencurian-tabung-gas-yang-meresahkan-masyarakat</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/polres-batang-ungkap-pencurian-tabung-gas-yang-meresahkan-masyarakat</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/cek-kesiapan-pilkada--polres-pekalongan-kota-gelar-rakor-linsek-operasi-mantap-praja-candi</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/cek-kesiapan-pilkada--polres-pekalongan-kota-gelar-rakor-linsek-operasi-mantap-praja-candi</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/perkara-dugaan-korupsi-pengelolaan-parkir-di-kota-pekalongan-mulai-disidangkan</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/perkara-dugaan-korupsi-pengelolaan-parkir-di-kota-pekalongan-mulai-disidangkan</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/progres-tmmd-reguler-ke-121-kodim-batang-dapat-apresiasi-dari-mabes-tni-ad</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/progres-tmmd-reguler-ke-121-kodim-batang-dapat-apresiasi-dari-mabes-tni-ad</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news?page_no=8</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news?page_no=8</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/puluhan-tahun-diimpikan-warga--tni-sukses-garap-jalan-tembus-kab-batang-ke-dieng</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/puluhan-tahun-diimpikan-warga--tni-sukses-garap-jalan-tembus-kab-batang-ke-dieng</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/peringati-kemerdekaan--peradi-pekalongan-gelar-konsultasi-hukum-gratis-dan-donor-darah</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/peringati-kemerdekaan--peradi-pekalongan-gelar-konsultasi-hukum-gratis-dan-donor-darah</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/lomba-menyuapi-pisang-dan-tangkap-bebek--peringatan-hut-kemerdekaan-ri</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/lomba-menyuapi-pisang-dan-tangkap-bebek--peringatan-hut-kemerdekaan-ri</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/petani-upacara-di-areal-sawah--harapkan-merdeka-pangan</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/petani-upacara-di-areal-sawah--harapkan-merdeka-pangan</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/hut-ri-ke-79--dua-wbp-lapas-batang-hirup-udara-bebas</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/hut-ri-ke-79--dua-wbp-lapas-batang-hirup-udara-bebas</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/ptsp-lapas-batang--koneksikan-kemudahan-layanan-pengunjung</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/ptsp-lapas-batang--koneksikan-kemudahan-layanan-pengunjung</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news?page_no=9</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news?page_no=9</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/111-asn-pemkot-pekalongan-terima-penghargaan-satya-lencana-karya-satya</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/111-asn-pemkot-pekalongan-terima-penghargaan-satya-lencana-karya-satya</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/70-anggota-paskibraka-kota-pekalongan-tahun-2024-dikukuhkan</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/70-anggota-paskibraka-kota-pekalongan-tahun-2024-dikukuhkan</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/puluhan-anak-anak-meriahkan-lomba-fashion-show</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/puluhan-anak-anak-meriahkan-lomba-fashion-show</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/tingkatkan-kemampuan-personil--polres-pekalongan-gelar-latihan-menembak</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/tingkatkan-kemampuan-personil--polres-pekalongan-gelar-latihan-menembak</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/staf-ahli-pangdam-iv-diponegoro-kunjungi-tmmd-wilayah-kodim-pekalongan</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/staf-ahli-pangdam-iv-diponegoro-kunjungi-tmmd-wilayah-kodim-pekalongan</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/bekali-pelatihan-kerja--masyarakat-diminta-tekuni-ilmu-yang-didapat</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/bekali-pelatihan-kerja--masyarakat-diminta-tekuni-ilmu-yang-didapat</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news?page_no=10</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news?page_no=10</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/hari-veteran-nasional--pemkot-dorong-generasi-muda-tetap-berbudaya</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/hari-veteran-nasional--pemkot-dorong-generasi-muda-tetap-berbudaya</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/veteran-di-pemalang-bersama-pemerintah-siap-lanjutkan-pembangunan-menuju-indonesia-emas</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/veteran-di-pemalang-bersama-pemerintah-siap-lanjutkan-pembangunan-menuju-indonesia-emas</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/serunya-lomba-agustusan-jemaah-gereja-santo-petrus-pekalongan</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/serunya-lomba-agustusan-jemaah-gereja-santo-petrus-pekalongan</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/ratusan-atlet-pelajar-ikuti-kejuaraan-pencak-silat-piala-walikota-2024</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/ratusan-atlet-pelajar-ikuti-kejuaraan-pencak-silat-piala-walikota-2024</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/olahraga-lari-sambil-berkostum-unik</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/olahraga-lari-sambil-berkostum-unik</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/guru-madin-se-kota-pekalongan-ikuti-kegiatan-bimtek</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/guru-madin-se-kota-pekalongan-ikuti-kegiatan-bimtek</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news?page_no=14</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news?page_no=14</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news?page_no=15</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news?page_no=15</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news?page_no=16</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news?page_no=16</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/bendahara-pengeluaran-dan-pembuat-daftar-gaji-skpd-wajib-pahami-aturan-dirjen-pajak-baru-per-5-pj-2024</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/bendahara-pengeluaran-dan-pembuat-daftar-gaji-skpd-wajib-pahami-aturan-dirjen-pajak-baru-per-5-pj-2024</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/bkpsdm-tunggu-juknis-seleksi-casn-kota-pekalongan-2024</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/bkpsdm-tunggu-juknis-seleksi-casn-kota-pekalongan-2024</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/bupati-fadia-arafiq-tegaskan-hujatan-viral-di-medsos-hoax</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/bupati-fadia-arafiq-tegaskan-hujatan-viral-di-medsos-hoax</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/turnamen-sepakbola-salakbrojo-cup-2024-resmi-dibuka--ini-pesan-dari-askab-dan-dprd-kabupaten-pekalongan</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/turnamen-sepakbola-salakbrojo-cup-2024-resmi-dibuka--ini-pesan-dari-askab-dan-dprd-kabupaten-pekalongan</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/komunitas-seruni-greenpark-manfaatkan-lahan-tidur-untuk-pertanian--peternakan-dan-perikanan</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/komunitas-seruni-greenpark-manfaatkan-lahan-tidur-untuk-pertanian--peternakan-dan-perikanan</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/pemkot-targetkan-peresmian-pasar-banjarsari-paling-lambat-november-2024</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/pemkot-targetkan-peresmian-pasar-banjarsari-paling-lambat-november-2024</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/bangkitkan-pertanian-di-lahan-terdampak-banjir-rob--kodim-lakukan-uji-coba-lahan</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/bangkitkan-pertanian-di-lahan-terdampak-banjir-rob--kodim-lakukan-uji-coba-lahan</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/wawalkot-salahudin-dorong-dinas-terkait-lakukan-penyempurnaan-penanganan-banjir-dan-rob</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/wawalkot-salahudin-dorong-dinas-terkait-lakukan-penyempurnaan-penanganan-banjir-dan-rob</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/hunian-baru-20-wtp-kampung-bugisan-mulai-dibangun</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/hunian-baru-20-wtp-kampung-bugisan-mulai-dibangun</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/sampan-digifest-2024--dorong-akselerasi-transformasi-digital-masyarakat</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/sampan-digifest-2024--dorong-akselerasi-transformasi-digital-masyarakat</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/aksi-jaga-bumi--kobar-kota-pekalongan-dan-tni-polri-lakukan-penanaman-ratusan-pohon</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/aksi-jaga-bumi--kobar-kota-pekalongan-dan-tni-polri-lakukan-penanaman-ratusan-pohon</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/kado-hut-bhayangkara-ke-78--31-personel-polres-pekalongan-kota-naik-pangkat</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.41</priority>
+  <loc>https://www.batiktv.id/news/kado-hut-bhayangkara-ke-78--31-personel-polres-pekalongan-kota-naik-pangkat</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/lahan-terdampak-rob-di-kota-pekalongan--diuji-coba-tanam-padi-biosalin</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/lahan-terdampak-rob-di-kota-pekalongan--diuji-coba-tanam-padi-biosalin</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/usung-tema-sejarah-perjuangan-para-pahlawan--desa-sidomulyo-juara-1-karnaval-di-lebakbarang</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/usung-tema-sejarah-perjuangan-para-pahlawan--desa-sidomulyo-juara-1-karnaval-di-lebakbarang</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/pengurus-yayasan-dan-kbihu-yayasan-assalamah-periode-2024-2029-resmi-dikukuhkan</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/pengurus-yayasan-dan-kbihu-yayasan-assalamah-periode-2024-2029-resmi-dikukuhkan</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/hari-indonesia-menabung--ojk-tegal-ajak-300-pelajar-menabung</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/hari-indonesia-menabung--ojk-tegal-ajak-300-pelajar-menabung</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/bayi-usia-dua-bulan-di-siwalan-diduga-tewas-di-tangan-ayah-kandung</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/bayi-usia-dua-bulan-di-siwalan-diduga-tewas-di-tangan-ayah-kandung</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/dolan-paud-di-tk-mina-bahari--bunda-paud-kota-pekalongan-ajak-anak-peduli-sampah-sejak-dini</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/dolan-paud-di-tk-mina-bahari--bunda-paud-kota-pekalongan-ajak-anak-peduli-sampah-sejak-dini</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news?page_no=11</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news?page_no=11</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/agustus--pad-tpi-kota-pekalongan-capai-43-persen</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/agustus--pad-tpi-kota-pekalongan-capai-43-persen</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/meriahkan-hut-ri-ke-79--sasana-senam-taichi-po-an-tian-gelar-senam-dan-lomba-lomba</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/meriahkan-hut-ri-ke-79--sasana-senam-taichi-po-an-tian-gelar-senam-dan-lomba-lomba</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/peringati-hut-ke-79-republik-indonesia--forum-masyarakat-kayugeritan-gelar-sadranan-pepunden</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/peringati-hut-ke-79-republik-indonesia--forum-masyarakat-kayugeritan-gelar-sadranan-pepunden</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/selesai-pelatihan-di-semua-kelurahan--pemkot-harapkan-angka-pengangguran-berkurang</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/selesai-pelatihan-di-semua-kelurahan--pemkot-harapkan-angka-pengangguran-berkurang</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/lomba-cipta-baca-puisi-guru-paud--genjot-kualitas-pendidik-di-kecamatan-pekalongan-selatan</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/lomba-cipta-baca-puisi-guru-paud--genjot-kualitas-pendidik-di-kecamatan-pekalongan-selatan</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/warga-binaan-rutan-dan-lapas-pekalongan-terima-remisi-di-hari-kemerdekaan</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/warga-binaan-rutan-dan-lapas-pekalongan-terima-remisi-di-hari-kemerdekaan</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news?page_no=12</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news?page_no=12</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/peringatan-hut-ke-79-ri-di-lapangan-mataram-kota-pekalongan</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/peringatan-hut-ke-79-ri-di-lapangan-mataram-kota-pekalongan</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/renungan-malam-di-makam-pahlawan-warnai-malam-kemerdekaan</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/renungan-malam-di-makam-pahlawan-warnai-malam-kemerdekaan</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/maju-pilkada-2024--paslon-wajib-susun-visi-dan-misi-sesuai-rpjpd-2025-2045</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/maju-pilkada-2024--paslon-wajib-susun-visi-dan-misi-sesuai-rpjpd-2025-2045</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/lebih-baik-mencegah-daripada-mengobati--dinkes-minta-masyarakat-kenali-ciri-ciri-kusta</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/lebih-baik-mencegah-daripada-mengobati--dinkes-minta-masyarakat-kenali-ciri-ciri-kusta</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/sambut-hut-ke-79-ri--kreasi-seketeng-buatan-warga-dilombakan</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/sambut-hut-ke-79-ri--kreasi-seketeng-buatan-warga-dilombakan</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/baruna-academy-pekalongan-sosialisasikan-peluang-kerja-di-luar-negeri-dan-kapal-pesiar</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/baruna-academy-pekalongan-sosialisasikan-peluang-kerja-di-luar-negeri-dan-kapal-pesiar</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news?page_no=13</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news?page_no=13</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/45-anggota-dprd-kabupaten-pekalongan-periode-2024-2029-dilantik</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/45-anggota-dprd-kabupaten-pekalongan-periode-2024-2029-dilantik</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/kakak-beradik-anak-penjual-pindang-jadi-anggota-dprd-kabupaten-pekalongan</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/kakak-beradik-anak-penjual-pindang-jadi-anggota-dprd-kabupaten-pekalongan</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/sebanyak-86-wbp-rutan-kelas-iia-pekalongan-dapat-remisi--2-wbp-langsung-bebas</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/sebanyak-86-wbp-rutan-kelas-iia-pekalongan-dapat-remisi--2-wbp-langsung-bebas</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/sd-muhammadiyah-01-kandang-panjang-gelar-berbagai-perlombaan-sambut-hut-ri-ke-79</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/sd-muhammadiyah-01-kandang-panjang-gelar-berbagai-perlombaan-sambut-hut-ri-ke-79</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/lazismu-kota-pekalongan-tasharruf-beasiswa-mentari-untuk-29-siswa</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/lazismu-kota-pekalongan-tasharruf-beasiswa-mentari-untuk-29-siswa</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/35-anggota-dprd-kota-pekalongan-terpilih-periode-2024-2029-resmi-dilantik--90-persen-wajah-lama</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/35-anggota-dprd-kota-pekalongan-terpilih-periode-2024-2029-resmi-dilantik--90-persen-wajah-lama</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/dpc-pkb-kabupaten-pekalongan-datangi-mapolres-pekalongan--laporkan-muhammad-lukman-edy</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/dpc-pkb-kabupaten-pekalongan-datangi-mapolres-pekalongan--laporkan-muhammad-lukman-edy</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/meutia-azkia-jadi-anggota-dprd-kota-pekalongan-termuda</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/meutia-azkia-jadi-anggota-dprd-kota-pekalongan-termuda</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/tour-rrq-ke-pekalongan-disambut-ratusan-pendukung</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/tour-rrq-ke-pekalongan-disambut-ratusan-pendukung</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/lomba-balita-sehat-ceria-dorong-pengetahuan-orang-tua-dalam-tumbuh-kembang-balita</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/lomba-balita-sehat-ceria-dorong-pengetahuan-orang-tua-dalam-tumbuh-kembang-balita</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/dua-media-promosi-kiss-bay-dinkes-jadi-upaya-cegah-kematian-bayi</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/dua-media-promosi-kiss-bay-dinkes-jadi-upaya-cegah-kematian-bayi</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/dua-kios-pasar-darurat-sorogenen-terbakar</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/dua-kios-pasar-darurat-sorogenen-terbakar</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/ma-salafiyah-pekalongan-gelar-gerakan-nasional-aksi-bergizi</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/ma-salafiyah-pekalongan-gelar-gerakan-nasional-aksi-bergizi</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/tmmd-kodim-batang-berhasil-tuntaskan-sulitnya-air-bersih-di-desa-pacet</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/tmmd-kodim-batang-berhasil-tuntaskan-sulitnya-air-bersih-di-desa-pacet</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/puluhan-warung-di-pantai-blendung-hancur-diterjang-air-laut-pasang</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/puluhan-warung-di-pantai-blendung-hancur-diterjang-air-laut-pasang</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/walikota-aaf-lepas-6-atlet-pelajar-npci-berlaga-di-ajang-peparpeda-jateng-2024</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/walikota-aaf-lepas-6-atlet-pelajar-npci-berlaga-di-ajang-peparpeda-jateng-2024</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/turnamen-sepakbola-danramil-paninggaran-cup-ke-10-resmi-dibuka</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/turnamen-sepakbola-danramil-paninggaran-cup-ke-10-resmi-dibuka</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/gantikan-akp-isnovim--akp-danang-sri-wiratno-jabat-kasat-reskrim-polres-pekalongan</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.33</priority>
+  <loc>https://www.batiktv.id/news/gantikan-akp-isnovim--akp-danang-sri-wiratno-jabat-kasat-reskrim-polres-pekalongan</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.33</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/pemkot-minta-pelaku-usaha-masifkan-penggunaan-e-katalog-lokal</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.26</priority>
+  <loc>https://www.batiktv.id/news/pemkot-minta-pelaku-usaha-masifkan-penggunaan-e-katalog-lokal</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.26</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/diteror-dengan-berita-bohong--pedangdut-nana-akhirnya-buat-laporan-ke-polisi</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.26</priority>
+  <loc>https://www.batiktv.id/news/diteror-dengan-berita-bohong--pedangdut-nana-akhirnya-buat-laporan-ke-polisi</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.26</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/yaga-yingde-group-salurkan-dana-pendidikan-di-wonotunggal</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.26</priority>
+  <loc>https://www.batiktv.id/news/yaga-yingde-group-salurkan-dana-pendidikan-di-wonotunggal</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.26</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/dpc-pkb-kabupaten-pekalongan-gelar-rapat-pleno--usung-gus-muhaimin-jadi-ketum-dpp-pkb-lagi</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.26</priority>
+  <loc>https://www.batiktv.id/news/dpc-pkb-kabupaten-pekalongan-gelar-rapat-pleno--usung-gus-muhaimin-jadi-ketum-dpp-pkb-lagi</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.26</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/lazismu-kota-pekalongan-optimis-target-kumpulkan-zakat-rp-2-5-miliar</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.26</priority>
+  <loc>https://www.batiktv.id/news/lazismu-kota-pekalongan-optimis-target-kumpulkan-zakat-rp-2-5-miliar</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.26</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/meriahkan-hut-ke-79-kemerdekaan-ri--lingkungan-rt-04-rw-05-bendan-kergon-gelar-jalan-sehat</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.26</priority>
+  <loc>https://www.batiktv.id/news/meriahkan-hut-ke-79-kemerdekaan-ri--lingkungan-rt-04-rw-05-bendan-kergon-gelar-jalan-sehat</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.26</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/reuni-smpn-3-pekalongan-angkatan-89--rajut-kenangan-usai-35-tahun-seduluran-saklawase</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.26</priority>
+  <loc>https://www.batiktv.id/news/reuni-smpn-3-pekalongan-angkatan-89--rajut-kenangan-usai-35-tahun-seduluran-saklawase</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.26</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/pemkot-pekalongan-jadi-lokasi-studi-lapangan-pusdikmin-lemdiklat-polri</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.26</priority>
+  <loc>https://www.batiktv.id/news/pemkot-pekalongan-jadi-lokasi-studi-lapangan-pusdikmin-lemdiklat-polri</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.26</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/pemkot-pekalongan-salurkan-bantuan-beras-pada-28-ribu-masyarakat</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.26</priority>
+  <loc>https://www.batiktv.id/news/pemkot-pekalongan-salurkan-bantuan-beras-pada-28-ribu-masyarakat</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.26</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/kondisi-sakit-stroke--mantan-kades-ditemukan-meninggal-dunia-menggantung</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.26</priority>
+  <loc>https://www.batiktv.id/news/kondisi-sakit-stroke--mantan-kades-ditemukan-meninggal-dunia-menggantung</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.26</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/ribuan-warga-desa-selopajang-barat-meriahkan-karnaval-hut-ri-ke-79</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.26</priority>
+  <loc>https://www.batiktv.id/news/ribuan-warga-desa-selopajang-barat-meriahkan-karnaval-hut-ri-ke-79</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.26</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/peringatan-hut-ri-ke-79--rw10-kelurahan-krapyak-gelar-upacara-bendera</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.26</priority>
+  <loc>https://www.batiktv.id/news/peringatan-hut-ri-ke-79--rw10-kelurahan-krapyak-gelar-upacara-bendera</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.26</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/genbi-tegal-komisariat-unikal-gencar-sosialisasikan-qris</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.26</priority>
+  <loc>https://www.batiktv.id/news/genbi-tegal-komisariat-unikal-gencar-sosialisasikan-qris</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.26</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/antusias-warga-rw-09-perumahan-podosugih-gelar-upacara-kemerdekaan</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.26</priority>
+  <loc>https://www.batiktv.id/news/antusias-warga-rw-09-perumahan-podosugih-gelar-upacara-kemerdekaan</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.26</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/rapat-paripurna--dprd-dan-pemkot-pekalongan-dengarkan-pidato-kenegaraan</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.26</priority>
+  <loc>https://www.batiktv.id/news/rapat-paripurna--dprd-dan-pemkot-pekalongan-dengarkan-pidato-kenegaraan</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.26</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/alzena-by-dr-yu-skin-hadir-di-pekalongan--tawarkan-perawatan-sesuai-kebutuhan-kulit</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.26</priority>
+  <loc>https://www.batiktv.id/news/alzena-by-dr-yu-skin-hadir-di-pekalongan--tawarkan-perawatan-sesuai-kebutuhan-kulit</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.26</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/pemkot-pekalongan-raih-penghargaan-cnn-award-2024</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.26</priority>
+  <loc>https://www.batiktv.id/news/pemkot-pekalongan-raih-penghargaan-cnn-award-2024</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.26</priority>
 </url>
 <url>
-<loc>https://www.batiktv.id/news/dprd-dan-pemkot-pekalongan-setujui-bersama-kua-ppas-apbd-kota-pekalongan-2025</loc>
-<lastmod>2024-08-26T09:52:28+00:00</lastmod>
-<priority>0.26</priority>
+  <loc>https://www.batiktv.id/news/dprd-dan-pemkot-pekalongan-setujui-bersama-kua-ppas-apbd-kota-pekalongan-2025</loc>
+  <lastmod>2024-08-26T09:52:28+00:00</lastmod>
+  <priority>0.26</priority>
 </url>
+
+
 </urlset>
