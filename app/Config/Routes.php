@@ -34,7 +34,8 @@ $routes->get('logout', 'Login::logout');
 
 /** Artikel */
 $routes->get('/news', 'News::index');
-$routes->add('news/(:any)', 'Artikel::view/$1');
+$routes->add('/news/(:any)', 'Artikel::view/$1');
+$routes->add('/artikel/view/(:any)', 'Artikel::view/$1');
 $routes->get('/sitemap.xml', 'Sitemap::index');
 
 $routes->group('/', ['filter' => 'noauth'], function ($routes) {
