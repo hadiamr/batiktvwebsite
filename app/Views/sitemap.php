@@ -13,7 +13,7 @@ $datetime = new DateTime(date('Y-m-d H:i:s'));
   </url>
   <?php foreach ($url as $item) { ?>
     <url>
-      <loc><?= 'https://' . base_url('/news/' . $item['post_title_seo']) ?></loc>
+      <loc><?= base_url('/news/' . $item['post_title_seo']) ?></loc>
       <lastmod><?= $datetime->format(DATE_ATOM); ?></lastmod>
       <priority>0.8</priority>
     </url>
