@@ -39,10 +39,22 @@
             <label for="post_thumbnail" class="form-label">Thumbnail</label>
             <input type="file" class="form-control" id="post_thumbnail" name="post_thumbnail">
         </div>
-        <label for="post_link" class="form-label">Link Youtube</label>
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="post_link">https://youtube.com/</span>
-            <input type="text" class="form-control" id="post_link" placeholder="Masukan Link Youtube" name="post_link">
+        <div class="row">
+            <div class="col">
+                <label for="post_link" class="form-label">Link Youtube</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="post_link" placeholder="Youtube.com/(masukan link youtube)" name="post_link">
+                </div>
+            </div>
+            <div class="col">
+                <label for="post_tag" class="form-label">Kategori / Tag</label>
+                <select class="form-control selectpicker" multiple>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                </select>
+            </div>
         </div>
         <div class="mb-3">
             <label for="post_content" class="form-label">Konten</label>

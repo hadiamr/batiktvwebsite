@@ -2,7 +2,7 @@
 <div class="card shadow mb-4">
     <div class="card-header py-3 d-flex justify-content-between align-items-center">
         <h6 class="m-0 font-weight-bold text-dark"><?= $judulTemp ?> | <?= date("d/m/Y", strtotime($tanggal)) ?></h6>
-        <form action="/produksi/jadwal" method="POST" enctype="multipart/form-data">
+        <form action="" method="GET" enctype="multipart/form-data">
             <div class="d-flex"><input type="date" class="form-control mx-2" name="tanggal" value="<?= $tanggal ?>" style="width: 150px;">
                 <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i></button>
             </div>
@@ -64,8 +64,8 @@
                                 <td><?= $row['tempat']; ?></td>
                                 <td>
                                     <div class="d-flex justify-content-center">
-                                        <a href="/produksi/editJadwal/<?= $row['id_prod']; ?>" class="btn btn-primary mr-2">Edit</a>
-                                        <a href="/produksi/hapusJadwal/<?= $row['id_prod']; ?>" class="btn btn-primary">Hapus</a>
+                                        <a href="/produksi/editJadwal/<?= $row['id_prod']; ?>" class="btn btn-primary mr-2"><i class="fa fa-pen-square"></i></a>
+                                        <a href="/produksi/hapusJadwal/<?= $row['id_prod']; ?>" class="btn btn-primary"><i class="fa fa-trash"></i></a>
                                     </div>
                                 </td>
                             </tr>
@@ -127,8 +127,8 @@
                                 <td><?= $row['tempat']; ?></td>
                                 <td>
                                     <div class="d-flex justify-content-center">
-                                        <a href="/produksi/editJadwal/<?= $row['id_prod']; ?>" class="btn btn-primary mr-2">Edit</a>
-                                        <a href="/produksi/hapusJadwal/<?= $row['id_prod']; ?>" class="btn btn-primary">Hapus</a>
+                                        <a href="/produksi/editJadwal/<?= $row['id_prod']; ?>" class="btn btn-primary mr-2"><i class="fa fa-pen-square"></i></a>
+                                        <a href="/produksi/hapusJadwal/<?= $row['id_prod']; ?>" class="btn btn-primary"><i class="fa fa-trash"></i></a>
                                     </div>
                                 </td>
                             </tr>

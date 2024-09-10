@@ -1,7 +1,8 @@
 </div>
 </div>
 <!-- Footer-->
-<footer class="footer text-center bg-campur mt-4">
+<footer class="footer2 text-center bg-campur mt-4">
+    <div class="divider-full bg-birunom mb-5"></div>
     <div class="container">
         <div class="row">
             <!-- Footer Locasi-->

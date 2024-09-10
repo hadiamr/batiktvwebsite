@@ -10,30 +10,37 @@ use App\Models\TayangMod;
 
 class Artikel extends BaseController
 {
-    // function artikel()
-    // {
-    //     $model = new NewsModel();
-    //     $data['tambah'] = "no";
-    //     $data['jenis'] = "news";
-    //     $data['judulTemp'] = "Semua Artikel";
-    //     if (!$this->validate([])) {
-    //         $data['validation'] = $this->validator;
-    //         $data['news'] = $model->findAll();
-    //         echo view('admin/v_header', $data);
-    //         echo view('admin/v_news', $data);
-    //         echo view('admin/v_footer', $data);
-    //     }
-    // }
     function news()
     {
         $model = new NewsModel();
         $data = [];
+        $keyword = $this->request->getGet('keyword');
+        $bulan = $this->request->getGet('bulan');
+        $data['keyword'] = $keyword;
+        $data['bulan'] = $bulan;
         $data['judulTemp'] = "Artikel";
         $data['tambah'] = "no";
         $data['jenis'] = "news";
         if (!$this->validate([])) {
             $data['validation'] = $this->validator;
-            $data['news'] = $model->where('post_type', 'article')->orderBy('post_id', 'DESC')->asObject()->paginate(15, 'no');
+            $query = $model->where('post_type', 'article');
+            if (!empty($keyword && $bulan)) {
+                $query
+                    ->like('post_title', $keyword)
+                    ->orLike('author', $keyword)
+                    ->orLike('post_time', $bulan);
+            }
+            if (!empty($keyword)) {
+                $query
+                    ->like('post_title', $keyword)
+                    ->orLike('author', $keyword)
+                    ->orLike('post_time', $keyword);
+            }
+            if (!empty($bulan)) {
+                $query
+                    ->like('post_time', $bulan);
+            }
+            $data['news'] = $query->orderBy('post_id', 'DESC')->asObject()->paginate(15, 'no');
             $data['pager'] = $model->pager;
             echo view('admin/v_header', $data);
             echo view('admin/v_news', $data);
@@ -100,7 +107,7 @@ class Artikel extends BaseController
             $data['validation'] = $this->validator;
             $data['news'] = $model->getWhere(['post_title_seo' => $post_title_seo])->getRow();
             if ($data['news2'] = $model->where('post_type', 'article')->orderBy('post_id', 'DESC')) {
-                $data['news2'] = $model->where('post_status', 'Aktif')->whereNotIn('post_id', [$data['news']->post_id])->findAll(5);
+                $data['news2'] = $model->where('post_status', 'Aktif')->whereNotIn('post_id', [$data['news']->post_id])->findAll(10);
             }
             echo view('home/header', $data);
             echo view('home/artikel', $data);
@@ -141,6 +148,7 @@ class Artikel extends BaseController
             $data = array(
                 'post_title'  => $this->request->getPost('post_title'),
                 'post_title_seo' => $url,
+                'tag' => $this->request->getPost('tag'),
                 'post_status' => $this->request->getPost('post_status'),
                 'post_type' => $this->request->getPost('post_type'),
                 'author' => session()->get('akun_nama_lengkap'),
@@ -153,6 +161,7 @@ class Artikel extends BaseController
             $data = array(
                 'post_title'  => $this->request->getPost('post_title'),
                 'post_title_seo' => $url,
+                'tag' => $this->request->getPost('tag'),
                 'post_status' => $this->request->getPost('post_status'),
                 'post_type' => $this->request->getPost('post_type'),
                 'author' => session()->get('akun_nama_lengkap'),
@@ -196,6 +205,7 @@ class Artikel extends BaseController
             $data = array(
                 'post_title'  => $this->request->getPost('post_title'),
                 'post_title_seo' => $url,
+                'tag' => $this->request->getPost('tag'),
                 'post_status' => $this->request->getPost('post_status'),
                 'post_type' => $this->request->getPost('post_type'),
                 'post_link' => $this->request->getPost('post_link'),
@@ -211,6 +221,7 @@ class Artikel extends BaseController
             $data = array(
                 'post_title'  => $this->request->getPost('post_title'),
                 'post_title_seo' => $url,
+                'tag' => $this->request->getPost('tag'),
                 'post_status' => $this->request->getPost('post_status'),
                 'post_type' => $this->request->getPost('post_type'),
                 'post_link' => $this->request->getPost('post_link'),

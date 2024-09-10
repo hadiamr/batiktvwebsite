@@ -17,12 +17,12 @@ class Produksi extends BaseController
         $data['tambah'] = "no";
         $data['jenis'] = "produksi";
         $data['judulTemp'] = "Jadwal Produksi";
-        $tanggal  = $this->request->getPost('tanggal');
+        $tanggal  = $this->request->getGet('tanggal');
         $data['sekarang'] = date('ymd');
         if (empty($tanggal)) {
             $data['tanggal']  = date('Y-m-d');
         } else {
-            $data['tanggal']  = $this->request->getPost('tanggal');
+            $data['tanggal']  = $this->request->getGet('tanggal');
         }
         if (!$this->validate([])) {
             $data['validation'] = $this->validator;

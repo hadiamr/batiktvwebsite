@@ -33,8 +33,8 @@
                                             <?php } ?>
                                             <td>
                                                 <div class="d-flex justify-content-center">
-                                                    <a href="/tayang/edit/<?= $row['id_tayang']; ?>" class="btn btn-primary mx-2">Edit</a>
-                                                    <a href="/tayang/hapus/<?= $row['id_tayang']; ?>" class="btn btn-primary">Hapus</a>
+                                                    <a href="/tayang/edit/<?= $row['id_tayang']; ?>" class="btn btn-primary mx-2"><i class="fa fa-pen-square"></i></a>
+                                                    <a href="/tayang/hapus/<?= $row['id_tayang']; ?>" class="btn btn-primary"><i class="fa fa-trash"></i></a>
                                                 </div>
                                             </td>
                                         </tr>

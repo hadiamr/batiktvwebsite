@@ -27,6 +27,9 @@
             <?php echo $news->post_content; ?>
         </div>
     </div>
+    <a href="#" target="_blank" class="btn-sm btn-primary mb-2 artikel" style="text-decoration:none" type="button">
+        <i class="fas fa-hashtag"></i> Berita Daerah
+    </a>
     <hr>
     <p class="artikel">Bagikan artikel:
     <div class="sharethis-inline-share-buttons"></div>
@@ -35,10 +38,10 @@
 </div>
 <div class="col-lg-4">
     <div class="bg-light rounded p-4 pt-0 mb-4">
-        <div class="h5 pt-4">Berita Terkini
+        <div class="h5 pt-4 pb-1">Berita Terkini
             <hr>
         </div>
-        <div class="row g-4">
+        <div class="row g-4 scroll-table3">
             <?php foreach ($news2 as $row) : ?>
                 <div class="col-12">
                     <div class="row g-4 align-items-center">
@@ -64,28 +67,33 @@
                     </div>
                 </div>
             <?php endforeach; ?>
+            <div class="row mt-4">
+                <a href="/news" class="btn btn-primary ms-2 py-2 h3" type="button">Berita Lainnya</a>
+            </div>
         </div>
     </div>
     <div id="table" class="bg-secondary rounded p-4 mb-4">
-        <table class="table text-center table-bordered" id="dataTable" cellspacing="0">
-            <div class="h5 mb-2 text-white text-center">Jadwal Tayang <?= $hari; ?><div>
-                    <thead>
-                        <tr class="text-white bg-campur h6">
-                            <th>Jam</th>
-                            <th>Program</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                        foreach ($tayang as $row) : ?>
-                            <tr class="text-white">
-                                <td><?= $row['jam']; ?></td>
-                                <td><?= $row['program']; ?></td>
+        <div class="table-responsive scroll-table2">
+            <table class="table text-center table-bordered" id="dataTable" cellspacing="0">
+                <div class="h5 mb-2 text-white text-center">Jadwal Tayang <?= $hari; ?><div>
+                        <thead>
+                            <tr class="text-white bg-campur h6">
+                                <th>Jam</th>
+                                <th>Program</th>
                             </tr>
-                    </tbody>
-                <?php
-                        endforeach; ?>
-        </table>
+                        </thead>
+                        <tbody>
+                            <?php
+                            foreach ($tayang as $row) : ?>
+                                <tr class="text-white">
+                                    <td><?= $row['jam']; ?></td>
+                                    <td><?= $row['program']; ?></td>
+                                </tr>
+                        </tbody>
+                    <?php
+                            endforeach; ?>
+            </table>
+        </div>
     </div>
-    <!-- <img class="img-fluid rounded" src="../../../home/assets/img/banner3.png"> -->
+    <img class="img-fluid rounded" src="../../../home/assets/img/banner3.png">
 </div>

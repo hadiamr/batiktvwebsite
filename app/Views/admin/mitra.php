@@ -41,8 +41,8 @@
                             </td>
                             <td>
                                 <div class="d-flex justify-content-center">
-                                    <a href="/mitra/edit/<?= $row->id; ?>" class="btn btn-primary mx-2">Edit</a>
-                                    <a href="/mitra/hapus/<?= $row->id; ?>" class="btn btn-primary">Hapus</a>
+                                    <a href="/mitra/edit/<?= $row->id; ?>" class="btn btn-primary mx-2"><i class="fa fa-pen-square"></i></a>
+                                    <a href="/mitra/hapus/<?= $row->id; ?>" class="btn btn-primary"><i class="fa fa-trash"></i></a>
                                 </div>
                             </td>
                         </tr>

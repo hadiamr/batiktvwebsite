@@ -41,8 +41,8 @@
                             <td><?= $row->role; ?></td>
                             <td>
                                 <div class="d-flex justify-content-center">
-                                    <a href="/pengguna/edit/<?= $row->username; ?>" class="btn btn-primary mx-2">Edit</a>
-                                    <a href="/pengguna/hapus/<?= $row->id; ?>" class="btn btn-primary">Hapus</a>
+                                    <a href="/pengguna/edit/<?= $row->username; ?>" class="btn btn-primary mx-2"><i class="fa fa-pen-square"></i></a>
+                                    <a href="/pengguna/hapus/<?= $row->id; ?>" class="btn btn-primary"><i class="fa fa-trash"></i></a>
                                 </div>
                             </td>
                         </tr>

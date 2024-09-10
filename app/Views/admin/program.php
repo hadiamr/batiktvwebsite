@@ -65,8 +65,8 @@
                             <td style="width: 90px;"><?= $row->tim; ?></td>
                             <td>
                                 <div class="d-flex justify-content-center">
-                                    <a href="/program/edit/<?= $row->id; ?>" class="btn btn-primary mx-2">Edit</a>
-                                    <a href="/program/hapus/<?= $row->id; ?>" class="btn btn-primary">Hapus</a>
+                                    <a href="/program/edit/<?= $row->id; ?>" class="btn btn-primary mx-2"><i class="fa fa-pen-square"></i></a>
+                                    <a href="/program/hapus/<?= $row->id; ?>" class="btn btn-primary"><i class="fa fa-trash"></i></a>
                                 </div>
                             </td>
                         </tr>

@@ -37,7 +37,7 @@
                             <td><?= $row['episode']; ?></td>
                             <td>
                                 <div class="d-flex justify-content-center">
-                                    <a href="/tayangan/edit/<?= $row['id']; ?>" class="btn btn-primary mx-2">Edit</a>
+                                    <a href="/tayangan/edit/<?= $row['id']; ?>" class="btn btn-primary mx-2"><i class="fa fa-pen-square"></i></a>
                                 </div>
                             </td>
                         </tr>
