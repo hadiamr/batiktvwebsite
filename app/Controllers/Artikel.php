@@ -148,7 +148,7 @@ class Artikel extends BaseController
             $data = array(
                 'post_title'  => $this->request->getPost('post_title'),
                 'post_title_seo' => $url,
-                'tag' => $this->request->getPost('tag'),
+                // 'tag' => $this->request->getPost('tag'),
                 'post_status' => $this->request->getPost('post_status'),
                 'post_type' => $this->request->getPost('post_type'),
                 'author' => session()->get('akun_nama_lengkap'),
@@ -161,7 +161,7 @@ class Artikel extends BaseController
             $data = array(
                 'post_title'  => $this->request->getPost('post_title'),
                 'post_title_seo' => $url,
-                'tag' => $this->request->getPost('tag'),
+                // 'tag' => $this->request->getPost('tag'),
                 'post_status' => $this->request->getPost('post_status'),
                 'post_type' => $this->request->getPost('post_type'),
                 'author' => session()->get('akun_nama_lengkap'),
@@ -205,7 +205,7 @@ class Artikel extends BaseController
             $data = array(
                 'post_title'  => $this->request->getPost('post_title'),
                 'post_title_seo' => $url,
-                'tag' => $this->request->getPost('tag'),
+                // 'tag' => $this->request->getPost('tag'),
                 'post_status' => $this->request->getPost('post_status'),
                 'post_type' => $this->request->getPost('post_type'),
                 'post_link' => $this->request->getPost('post_link'),
@@ -221,7 +221,7 @@ class Artikel extends BaseController
             $data = array(
                 'post_title'  => $this->request->getPost('post_title'),
                 'post_title_seo' => $url,
-                'tag' => $this->request->getPost('tag'),
+                // 'tag' => $this->request->getPost('tag'),
                 'post_status' => $this->request->getPost('post_status'),
                 'post_type' => $this->request->getPost('post_type'),
                 'post_link' => $this->request->getPost('post_link'),

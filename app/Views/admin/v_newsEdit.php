@@ -56,7 +56,7 @@
                             <input type="text" class="form-control" id="post_link" placeholder="Youtube.com/(masukan link youtube)" name="post_link">
                         </div>
                     </div>
-                    <div class="col">
+                    <!-- <div class="col">
                         <label for="post_tag" class="form-label">Kategori / Tag</label>
                         <select class="form-control selectpicker formselect" multiple>
                             <option value="1">One</option>
@@ -64,7 +64,7 @@
                             <option value="3">Three</option>
                             <option value="4">Four</option>
                         </select>
-                    </div>
+                    </div> -->
                 </div>
                 <?php
                 if (!empty($news->post_thumbnail)) { ?>
