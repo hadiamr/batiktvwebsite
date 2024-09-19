@@ -2,7 +2,7 @@
     <div class="container-fluid pt-2">
         <div class="row">
             <div class="col-lg-8">
-                <div class="row bg-light rounded px-3 pt-4 pb-2 mb-3">
+                <div class="row bg-light rounded px-3 pt-4 pb-2 my-2">
                     <div>
                         <div class="h4">Sejarah Singkat</div>
                         <div class="divider-full bg-campur rounded mb-3" style="height: 0.25rem; max-width: 8rem;"></div>
@@ -58,7 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 px-3">
+            <div class="col-lg-4 px-3 mt-2">
                 <div class="h5">Program Unggulan</div>
                 <div class="divider-full bg-campur rounded mb-3" style="height: 0.25rem; max-width: 8rem;"></div>
                 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
