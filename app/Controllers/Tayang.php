@@ -5,12 +5,13 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\TayangMod;
 use App\Models\HariMod;
+use App\Models\NewsModel;
 use App\Models\ProgramMod;
+use App\Models\SetelanModel;
 use Dompdf\Dompdf;
 
 class Tayang extends BaseController
 {
-    /** Data Tayang */
     public function view()
     {
         $model = new TayangMod();

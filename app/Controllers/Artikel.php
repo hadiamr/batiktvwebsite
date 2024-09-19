@@ -13,7 +13,6 @@ class Artikel extends BaseController
     function news()
     {
         $model = new NewsModel();
-        $data = [];
         $keyword = $this->request->getGet('keyword');
         $bulan = $this->request->getGet('bulan');
         $data['keyword'] = $keyword;
@@ -50,12 +49,33 @@ class Artikel extends BaseController
     function page()
     {
         $model = new NewsModel();
+        $keyword = $this->request->getGet('keyword');
+        $bulan = $this->request->getGet('bulan');
+        $data['keyword'] = $keyword;
+        $data['bulan'] = $bulan;
         $data['tambah'] = "no";
         $data['jenis'] = "news";
         $data['judulTemp'] = "Halaman";
         if (!$this->validate([])) {
             $data['validation'] = $this->validator;
-            $data['news'] = $model->where('post_type', 'page')->orderBy('post_id', 'DESC')->asObject()->paginate(6, 'no');
+            $query = $model->where('post_type', 'page');
+            if (!empty($keyword && $bulan)) {
+                $query
+                    ->like('post_title', $keyword)
+                    ->orLike('author', $keyword)
+                    ->orLike('post_time', $bulan);
+            }
+            if (!empty($keyword)) {
+                $query
+                    ->like('post_title', $keyword)
+                    ->orLike('author', $keyword)
+                    ->orLike('post_time', $keyword);
+            }
+            if (!empty($bulan)) {
+                $query
+                    ->like('post_time', $bulan);
+            }
+            $data['news'] = $query->orderBy('post_id', 'DESC')->asObject()->paginate(15, 'no');
             $data['pager'] = $model->pager;
             echo view('admin/v_header', $data);
             echo view('admin/v_news', $data);
@@ -106,6 +126,9 @@ class Artikel extends BaseController
             $data['setelan'] = $model3->getWhere(['id' => 1])->getRow();
             $data['validation'] = $this->validator;
             $data['news'] = $model->getWhere(['post_title_seo' => $post_title_seo])->getRow();
+            $data['title'] = $data['news']->post_title;
+            $data['logo'] = '/assets/img/logo2.svg';
+            $data['lebar'] = '250';
             if ($data['news2'] = $model->where('post_type', 'article')->orderBy('post_id', 'DESC')) {
                 $data['news2'] = $model->where('post_status', 'Aktif')->whereNotIn('post_id', [$data['news']->post_id])->findAll(10);
             }

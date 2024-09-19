@@ -33,9 +33,11 @@ $routes->get('/', 'Home::index');
 $routes->get('logout', 'Login::logout');
 
 /** Artikel */
-$routes->get('/news', 'News::index');
+$routes->get('/news', 'Menu::news');
+$routes->get('/program', 'Menu::program');
+$routes->get('/jadwal', 'Menu::jadwal');
+$routes->get('/profil', 'Menu::profil');
 $routes->add('/news/(:any)', 'Artikel::view/$1');
-$routes->add('/artikel/view/(:any)', 'Artikel::view/$1');
 $routes->get('/sitemap.xml', 'Sitemap::index');
 
 $routes->group('/', ['filter' => 'noauth'], function ($routes) {

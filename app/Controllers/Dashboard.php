@@ -13,7 +13,6 @@ class Dashboard extends BaseController
         // Produksi
         $model = new ProduksiMod();
         $model2 = new TayangMod();
-        $model3 = new AdminModel();
         $data['tanggal']  = date('Y-m-d');
         $data['sekarang'] = date('ymd');
         $data['jadwal'] = $model->getProduksi();

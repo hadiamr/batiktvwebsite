@@ -4,7 +4,7 @@
     <div class="card-header py-3">
         <form action="" method="GET">
             <div class="d-flex float-right">
-                <input type="text" name="keyword" value="<?php echo $keyword ?>" class="form-control mx-2" placeholder="Pencarian...">
+                <input type="text" name="keyword" value="<?php echo $keyword ?>" class="form-control mx-2" placeholder="cari judul/penulis...">
                 <button type="submit" class="btn btn-primary shadow-sm"><i class="fas fa-search"></i></button>
             </div>
             <div class="d-flex float-right"><input type="month" class="form-control" name="bulan" value="<?php echo $bulan ?>">

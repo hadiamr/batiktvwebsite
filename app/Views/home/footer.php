@@ -1,5 +1,3 @@
-</div>
-</div>
 <!-- Footer-->
 <footer class="footer2 text-center bg-campur mt-4">
     <div class="divider-full bg-birunom mb-5"></div>

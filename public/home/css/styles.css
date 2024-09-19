@@ -114,6 +114,12 @@ body {
   overflow: auto;
   display: block;
 }
+.scroll-table4{
+  position: relative;
+  height: 380px;
+  overflow: auto;
+  display: block;
+}
 .artikel{
   color: #353535;
   font-size: 15px;
