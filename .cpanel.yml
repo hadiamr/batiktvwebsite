@@ -14,4 +14,4 @@ deployment:
     - /bin/cp -R app/Views $DEPLOYPATH2
 
     - export DEPLOYPATH3=/home/batiktv1/batiktv_core/app/Config/
-    - /bin/cp -R Routes $DEPLOYPATH3
+    - /bin/cp Routes.php $DEPLOYPATH3
