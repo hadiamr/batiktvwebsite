@@ -89,6 +89,8 @@ class Artikel extends BaseController
         $model3 = new SetelanModel();
         $data['tanggal']  = date('Y-m-d');
         $tanggal  = date('D');
+        $data['logo'] = '/assets/img/logo2.svg';
+        $data['lebar'] = '230';
 
         if (!$this->validate([])) {
             // Tayang
@@ -127,8 +129,6 @@ class Artikel extends BaseController
             $data['validation'] = $this->validator;
             $data['news'] = $model->getWhere(['post_title_seo' => $post_title_seo])->getRow();
             $data['title'] = $data['news']->post_title;
-            $data['logo'] = '/assets/img/logo2.svg';
-            $data['lebar'] = '250';
             if ($data['news2'] = $model->where('post_type', 'article')->orderBy('post_id', 'DESC')) {
                 $data['news2'] = $model->where('post_status', 'Aktif')->whereNotIn('post_id', [$data['news']->post_id])->findAll(10);
             }

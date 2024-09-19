@@ -17,7 +17,7 @@ class Menu extends BaseController
         $tanggal  = date('D');
         $data['title'] = 'Batik TV News';
         $data['logo'] = '/assets/img/logo2.svg';
-        $data['lebar'] = '250';
+        $data['lebar'] = '230';
 
         if (!$this->validate([])) {
             $data['validation'] = $this->validator;

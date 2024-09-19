@@ -23,7 +23,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg bg-campur text-uppercase fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="/news"><img class="img-fluid" width="<?= $lebar ?>" src="<?php echo base_url('home') . $logo ?>" alt="Batik TV News"></a>
+            <a class="navbar-brand" href="#"><img class="img-fluid" width="<?= $lebar ?>" src="<?php echo base_url('home') . $logo ?>" alt="Batik TV"></a>
             <button class="navbar-toggler text-uppercase font-weight-bold text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>

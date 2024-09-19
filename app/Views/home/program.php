@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-8 px-3">
                 <div class="spinner-border spinner-border-sm biru" role="status">
-                    <span class="sr-only">Loading...</span>
+                    <span class="sr-only"></span>
                 </div> Tunggu update selanjutnya...
             </div>
             <div class="col-lg-4 px-3">
