@@ -84,13 +84,11 @@
                         <div class="bg-light rounded px-4 pt-4 pb-4 mb-4 col-lg-7">
                             <div class="ratio ratio-16x9 position-relative rounded overflow-hidden">
                                 <a href="/news/<?= $row['post_title_seo']; ?>">
-                                    <?php
-                                    if (!empty($row['post_thumbnail'])) {
-                                        echo '<img src="' . base_url("../home/assets/img/news/$row[post_thumbnail]") . '" width="100%" alt=' . $row['post_title'] . '>';
-                                    } else {
-                                        echo '<img src="' . base_url("../home/assets/img/btv.png") . '" width="100%" alt=' . $row['post_title'] . '>';
-                                    }
-                                    ?>
+                                    <?php if (!empty($row['post_thumbnail'])) { ?>
+                                        <img src="<?= base_url("../home/assets/img/news/$row[post_thumbnail]") ?>" width="100%" alt='<?= $row['post_title'] ?>'>
+                                    <?php } else { ?>
+                                        <img src="<?= base_url("../home/assets/img/btv.png") ?>" width="100%" alt='<?= $row['post_title'] ?>'>
+                                    <?php } ?>
                                 </a>
                             </div>
                             <div class="d-flex align-items-center pt-4 pb-2">
@@ -109,13 +107,11 @@
                                     <div class="row g-3 align-items-center">
                                         <div class="col-5">
                                             <div class="position-relative rounded overflow-hidden ratio ratio-16x9">
-                                                <?php
-                                                if (!empty($row['post_thumbnail'])) {
-                                                    echo '<img src="' . base_url("../home/assets/img/news/$row[post_thumbnail]") . '" width="100%" alt=' . $row['post_title'] . '>';
-                                                } else {
-                                                    echo '<img src="' . base_url("../home/assets/img/btv.png") . '" width="100%" alt=' . $row['post_title'] . '>';
-                                                }
-                                                ?>
+                                                <?php if (!empty($row['post_thumbnail'])) { ?>
+                                                    <img src="<?= base_url("../home/assets/img/news/$row[post_thumbnail]") ?>" width="100%" alt='<?= $row['post_title'] ?>'>
+                                                <?php } else { ?>
+                                                    <img src="<?= base_url("../home/assets/img/btv.png") ?>" width="100%" alt='<?= $row['post_title'] ?>'>
+                                                <?php } ?>
                                             </div>
                                         </div>
                                         <div class="col-7">
@@ -284,9 +280,9 @@
             <?php foreach ($mitra as $row) : ?>
                 <div class="slide mx-3 mt-2">
                     <?php
-                    if (!empty($row->logo)) {
-                        echo '<img src="' . base_url("../admin/img/mitra/$row->logo") . '" width="100" alt=' . $row->nama . '>';
-                    } ?>
+                    if (!empty($row->logo)) : ?>
+                        <img src="<?= base_url('../admin/img/mitra/' . $row->logo) ?>" width="100" alt="<?= $row->nama ?>">
+                    <?php endif; ?>
                 </div>
             <?php endforeach; ?>
         </section>

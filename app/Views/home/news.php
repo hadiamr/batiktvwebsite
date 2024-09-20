@@ -7,15 +7,11 @@
                         <div class="col-lg-6 pb-4">
                             <div class="position-relative rounded overflow-hidden ratio ratio-16x9">
                                 <a href="/news/<?= $row->post_title_seo; ?>">
-                                    <?php
-                                    if (!empty($row->post_thumbnail)) {
-                                        echo '<img src="' . base_url("../home/assets/img/news/$row->post_thumbnail") . '" width="100%" height="100%" alt=' . $row->post_title .
-                                            '>';
-                                    } else {
-                                        echo '<img src="' . base_url("../home/assets/img/btv.png") . '" width="100%" height="100%" alt=' . $row->post_title .
-                                            '>';
-                                    }
-                                    ?>
+                                    <?php if (!empty($row->post_thumbnail)) { ?>
+                                        <img src="<?= base_url("../home/assets/img/news/$row->post_thumbnail") ?>" width="100%" height="100%" alt='<?= $row->post_title ?>'>
+                                    <?php } else { ?>
+                                        <img src="<?= base_url("../home/assets/img/btv.png") ?>" width="100%" height="100%" alt='<?= $row->post_title ?>'>
+                                    <?php } ?>
                                 </a>
                             </div>
                             <div class="d-flex align-items-center pt-4 pb-2">
@@ -116,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-                <img class="img-fluid rounded" src="../../../home/assets/img/iklan/pasirkencana.jpg" alt="Banner">
+                <img class="img-fluid rounded" src="../../../home/assets/img/iklan/pasirkencana.jpg" alt="Banner Iklan">
             </div>
         </div>
     </div>

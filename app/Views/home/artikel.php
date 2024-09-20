@@ -8,14 +8,11 @@
                     <?php
                     if (!empty($news->post_link)) { ?>
                         <iframe src="https://www.youtube.com/embed/<?php echo $news->post_link; ?>?autoplay=1&autohide=1&controls=1&disablekb=1&modestbranding=1&fs=1&rel=1&showinfo=0&enablejsapi=1&origin=https%3A%2F%2Fwww.batiktv.xyz&widgetid=1" title="<?php echo $news->post_title; ?>" class="rounded" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <?php } elseif (!empty($news->post_thumbnail)) {
-                        echo '<img src="' . base_url("../home/assets/img/news/$news->post_thumbnail") . '" width="100%"  class="rounded" alt=' . $news->post_title .
-                            '>';
-                    } else {
-                        echo '<img src="' . base_url("../home/assets/img/btv.png") . '" width="100%"  class="rounded" alt=' . $news->post_title .
-                            '>';
-                    }
-                    ?>
+                    <?php } elseif (!empty($news->post_thumbnail)) { ?>
+                        <img src="<?= base_url("../home/assets/img/news/$news->post_thumbnail") ?>" width="100%" class="rounded" alt='<?= $news->post_title ?>'>
+                    <?php } else { ?>
+                        <img src="<?= base_url("../home/assets/img/btv.png") ?>" width="100%" class="rounded" alt='<?= $news->post_title ?>'>
+                    <?php } ?>
                 </div>
             <?php
             }
@@ -54,13 +51,11 @@
                             <div class="row g-4 align-items-center">
                                 <div class="col-5">
                                     <div class="ratio ratio-16x9 position-relative rounded overflow-hidden">
-                                        <?php
-                                        if (!empty($row['post_thumbnail'])) {
-                                            echo '<img src="' . base_url("../home/assets/img/news/$row[post_thumbnail]") . '" width="100%">';
-                                        } else {
-                                            echo '<img src="' . base_url("../home/assets/img/btv.png") . '" width="100%">';
-                                        }
-                                        ?>
+                                        <?php if (!empty($row['post_thumbnail'])) { ?>
+                                            <img src="<?= base_url("../home/assets/img/news/$row[post_thumbnail]") ?>" width="100%" alt='<?= $row['post_title'] ?>'>
+                                        <?php } else { ?>
+                                            <img src="<?= base_url("../home/assets/img/btv.png") ?>" width="100%" alt='<?= $row['post_title'] ?>'>
+                                        <?php } ?>
                                     </div>
                                 </div>
                                 <div class="col-7">
@@ -104,7 +99,7 @@
                     </div>
                 </div>
             </div>
-            <img class="img-fluid rounded" src="../../../home/assets/img/banner3.png">
+            <img class="img-fluid rounded" src="../../../home/assets/img/banner3.png" alt="Banner Iklan">
         </div>
     </div>
 </div>
