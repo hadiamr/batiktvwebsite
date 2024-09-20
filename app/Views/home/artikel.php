@@ -9,10 +9,10 @@
                     if (!empty($news->post_link)) { ?>
                         <iframe src="https://www.youtube.com/embed/<?php echo $news->post_link; ?>?autoplay=1&autohide=1&controls=1&disablekb=1&modestbranding=1&fs=1&rel=1&showinfo=0&enablejsapi=1&origin=https%3A%2F%2Fwww.batiktv.xyz&widgetid=1" title="<?php echo $news->post_title; ?>" class="rounded" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <?php } elseif (!empty($news->post_thumbnail)) {
-                        echo '<img src="' . base_url("../home/assets/img/news/$news->post_thumbnail") . '" width="100%"  class="rounded" alt=' . $row->post_title .
+                        echo '<img src="' . base_url("../home/assets/img/news/$news->post_thumbnail") . '" width="100%"  class="rounded" alt=' . $news->post_title .
                             '>';
                     } else {
-                        echo '<img src="' . base_url("../home/assets/img/btv.png") . '" width="100%"  class="rounded" alt=' . $row->post_title .
+                        echo '<img src="' . base_url("../home/assets/img/btv.png") . '" width="100%"  class="rounded" alt=' . $news->post_title .
                             '>';
                     }
                     ?>
