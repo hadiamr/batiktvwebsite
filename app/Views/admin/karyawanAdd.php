@@ -12,11 +12,11 @@
         <?php } ?>
         <?= form_open_multipart(base_url('/karyawan/simpan')); ?>
         <div class="row">
-            <div class="col-3 mb-3">
+            <div class="col-lg-3 mb-3">
                 <label for="username" class="form-label">Username</label>
                 <input type="username" class="form-control" id="username" placeholder="Masukan Username" name="username" value="" required>
             </div>
-            <div class="col-3 mb-3">
+            <div class="col-lg-3 mb-3">
                 <label for="jabatan1" class="form-label">Jabatan 1</label>
                 <select name="jabatan1" class="form-select">
                     <option value="">-</option>
@@ -25,7 +25,7 @@
                     <?php endforeach; ?>
                 </select>
             </div>
-            <div class="col-3 mb-3">
+            <div class="col-lg-3 mb-3">
                 <label for="jabatan2" class="form-label">Jabatan 2</label>
                 <select name="jabatan2" class="form-select">
                     <option value="">-</option>
@@ -34,7 +34,7 @@
                     <?php endforeach; ?>
                 </select>
             </div>
-            <div class="col-3 mb-3">
+            <div class="col-lg-3 mb-3">
                 <label for="jabatan3" class="form-label">Jabatan 3</label>
                 <select name="jabatan3" class="form-select">
                     <option value="">-</option>
@@ -45,11 +45,11 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-6 mb-3">
+            <div class="col-lg-6 mb-3">
                 <label for="nama_lengkap" class="form-label">Nama Lengkap</label>
                 <input type="text" class="form-control" id="nama_lengkap" placeholder="Masukan Nama Lengkap" name="nama_lengkap" value="" required>
             </div>
-            <div class="col-6 mb-3">
+            <div class="col-lg-6 mb-3">
                 <label for="phone" class="form-label">Handphone</label>
                 <input type="number" class="form-control" id="phone" placeholder="Masukan Nomor Handphone" name="phone" value="">
             </div>

@@ -14,15 +14,15 @@
                 <?= form_open_multipart(base_url('/tayangan/update/' . $tayangan->id)); ?>
                 <input type="hidden" name="id" class="form-control" value="<?= $tayangan->id ?>">
                 <div class="row">
-                    <div class="col mb-3">
+                    <div class="col-lg mb-3">
                         <label for="jam" class="form-label">Jam</label>
                         <input type="text" class="form-control" id="jam" placeholder="Masukan Jam" name="jam" value="<?= $tayangan->jam ?>" disabled>
                     </div>
-                    <div class="col mb-3">
+                    <div class="col-lg mb-3">
                         <label for="program" class="form-label">Nama Program</label>
                         <input type="text" class="form-control" id="program" placeholder="Masukan Program" name="program" value="<?= $tayangan->nama_program ?>" disabled>
                     </div>
-                    <div class="col mb-3">
+                    <div class="col-lg mb-3">
                         <label for="episode" class="form-label">Episode</label>
                         <select name="episode" class="form-select">
                             <option value="">-</option>

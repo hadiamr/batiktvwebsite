@@ -13,11 +13,11 @@
         <?= form_open_multipart(base_url('/mitra/update/' . $mitra->id)); ?>
         <input type="hidden" name="id" class="form-control" value="<?= $mitra->id ?>">
         <div class="row">
-            <div class="col mb-3">
+            <div class="col-lg mb-3">
                 <label for="nama" class="form-label">Nama Mitra</label>
                 <input type="text" class="form-control" id="nama" placeholder="Masukan Nama Mitra" name="nama" value="<?= $mitra->nama ?>" required>
             </div>
-            <div class="col mb-3">
+            <div class="col-lg mb-3">
                 <label for="logo" class="form-label">Logo</label>
                 <input type="file" class="form-control" id="logo" name="logo" value="<?= $mitra->logo ?>">
             </div>

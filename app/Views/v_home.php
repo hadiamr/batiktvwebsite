@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="google-adsense-account" content="ca-pub-6947664556061935">
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="Televisi lokal di bawah Dinas Komunikasi dan Informatika Kota Pekalongan yang telah berdiri sejak April 2012. Batik TV hadir di channel digital 30 UHF dan platform media sosial" />
+    <meta name="author" content="Batik TV" />
     <title>Batik TV</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('home') ?>/assets/favicon.png" />

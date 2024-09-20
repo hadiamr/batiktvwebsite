@@ -12,12 +12,12 @@
         <?php } ?>
         <?= form_open_multipart(base_url('/produksi/updateJadwal/' . $jadwalProd->id_prod)); ?>
         <div class="row">
-            <div class="col mb-3">
+            <div class="col-lg mb-3">
                 <label for="waktu" class="form-label">Waktu</label>
                 <input type="hidden" name="id_prod" value="<?= $jadwalProd->id_prod ?>">
                 <input type="datetime-local" class="form-control" id="waktu" name="waktu" value="<?= $convertDate = date("Y-m-d H:i:s", strtotime($jadwalProd->waktu)); ?>" required>
             </div>
-            <div class="col mb-3">
+            <div class="col-lg mb-3">
                 <label for="driver" class="form-label">Driver</label>
                 <select name="driver" class="form-select">
                     <option value="">--Pilih Driver--</option>
@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-6 col-mb-3">
+            <div class="col-lg-6 mb-3">
                 <label for="program_id" class="form-label">Program</label>
                 <select name="program_id" class="form-select">
                     <option value="1">--Pilih Program--</option>
@@ -45,11 +45,11 @@
                     endforeach; ?>
                 </select>
             </div>
-            <div class="col mb-3">
+            <div class="col-lg mb-3">
                 <label for="episode" class="form-label">Episode</label>
                 <input type="text" class="form-control" id="episode" placeholder="Episode" name="episode" value="<?= $jadwalProd->episode ?>">
             </div>
-            <div class="col mb-3">
+            <div class="col-lg mb-3">
                 <label for="tempat" class="form-label">Tempat Produksi</label>
                 <input type="text" class="form-control" id="tempat" placeholder="Tempat Produksi" name="tempat" value="<?= $jadwalProd->tempat ?>" required>
             </div>

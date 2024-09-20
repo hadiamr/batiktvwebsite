@@ -13,7 +13,7 @@
         <?= form_open_multipart(base_url('/tayang/update/' . $tayang->id_tayang)); ?>
         <input type="hidden" name="id_tayang" class="form-control" value="<?= $tayang->id_tayang ?>">
         <div class="row mb-3">
-            <div class="col-3">
+            <div class="col-lg-3">
                 <label for="hari" class="form-label">Hari</label>
                 <select name="hari" class="form-select" required>
                     <option>--Pilih Hari--</option>
@@ -26,34 +26,35 @@
                     endforeach; ?>
                 </select>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3">
                 <label for="jam" class="form-label">Jam</label>
                 <input type="time" class="form-control" id="jam" name="jam" value="<?= $tayang->jam ?>" required>
             </div>
-            <div class="col-4">
+            <div class="col-lg-6">
                 <label for="program" class="form-label">Program</label>
-                <select name="program" class="form-select" required>
-                    <option value="">--Pilih Program--</option>
-                    <?php foreach ($program as $row) : ?>
-                        <?php if ($tayang->program == $row['nama_program']) { ?>
-                            <option value="<?= $row['nama_program']; ?>" selected><?= $row['nama_program']; ?></option>
+                <div class="row">
+                    <div class="col">
+                        <select name="program" class="form-select" required>
+                            <option value="">--Pilih Program--</option>
+                            <?php foreach ($program as $row) : ?>
+                                <?php if ($tayang->program == $row['nama_program']) { ?>
+                                    <option value="<?= $row['nama_program']; ?>" selected><?= $row['nama_program']; ?></option>
+                                <?php } else { ?>
+                                    <option value="<?= $row['nama_program']; ?>"><?= $row['nama_program']; ?></option>
+                            <?php }
+                            endforeach; ?>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <?php if ($tayang->kategori == 'baru') { ?>
+                            <input type="checkbox" class="btn-check" id="btn-check-outlined" name="kategori" autocomplete="off" value="baru" checked>
                         <?php } else { ?>
-                            <option value="<?= $row['nama_program']; ?>"><?= $row['nama_program']; ?></option>
-                    <?php }
-                    endforeach; ?>
-                </select>
-            </div>
-            <div class="col-2">
-                <div class="mb-2">
-                    <br>
+                            <input type="checkbox" class="btn-check" id="btn-check-outlined" name="kategori" autocomplete="off" value="baru">
+                        <?php
+                        } ?>
+                        <label class="btn btn-outline-primary" for="btn-check-outlined">Episode Baru</label>
+                    </div>
                 </div>
-                <?php if ($tayang->kategori == 'baru') { ?>
-                    <input type="checkbox" class="btn-check" id="btn-check-outlined" name="kategori" autocomplete="off" value="baru" checked>
-                <?php } else { ?>
-                    <input type="checkbox" class="btn-check" id="btn-check-outlined" name="kategori" autocomplete="off" value="baru">
-                <?php
-                } ?>
-                <label class="btn btn-outline-primary" for="btn-check-outlined"> &nbsp; &nbsp; &nbsp; Episode Baru &nbsp; &nbsp; &nbsp;</label>
             </div>
         </div>
         <div>

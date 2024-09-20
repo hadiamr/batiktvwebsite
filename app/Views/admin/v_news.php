@@ -3,14 +3,14 @@
 <div class="card shadow mb-4">
     <div class="card-header py-3">
         <form action="" method="GET">
-            <div class="d-flex float-right">
+            <div class="d-flex float-right my-1">
                 <input type="text" name="keyword" value="<?php echo $keyword ?>" class="form-control mx-2" placeholder="cari judul/penulis...">
                 <button type="submit" class="btn btn-primary shadow-sm"><i class="fas fa-search"></i></button>
             </div>
-            <div class="d-flex float-right"><input type="month" class="form-control" name="bulan" value="<?php echo $bulan ?>">
+            <div class="d-flex float-right my-1"><input type="month" class="form-control" name="bulan" value="<?php echo $bulan ?>">
             </div>
         </form>
-        <h6 class="my-2 font-weight-bold text-dark">Data <?php echo $judulTemp ?></h6>
+        <h6 class="my-3 font-weight-bold text-dark">Data <?php echo $judulTemp ?></h6>
     </div>
     <div class="card-body">
         <!--Isi -->
@@ -19,7 +19,6 @@
                 <?php echo session()->getFlashdata('berhasil'); ?>
             </div>
         <?php } ?>
-
         <?php
         $errors = $validation->getErrors();
         if (!empty($errors)) {

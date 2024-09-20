@@ -16,21 +16,21 @@
             <input type="text" class="form-control" id="post_title" placeholder="Masukan Judul" name="post_title" value="" required>
         </div>
         <div class="row">
-            <div class="col mb-3">
+            <div class="col-lg mb-3">
                 <label for="post_status" class="form-label">Status</label>
                 <select name="post_status" class="form-select">
                     <option value="Aktif">Aktif</option>
                     <option value="Tidak Aktif">Tidak Aktif</option>
                 </select>
             </div>
-            <div class="col mb-3">
+            <div class="col-lg mb-3">
                 <label for="post_type" class="form-label">Tipe</label>
                 <select name="post_type" class="form-select">
                     <option value="article">Artikel</option>
                     <option value="page">Halaman</option>
                 </select>
             </div>
-            <div class="col mb-3">
+            <div class="col-lg mb-3">
                 <label for="author" class="form-label">Penulis</label>
                 <input type="text" class="form-control" id="author" placeholder="Author" name="author" value="<?php echo session()->get('akun_nama_lengkap') ?>" readonly>
             </div>
@@ -40,13 +40,13 @@
             <input type="file" class="form-control" id="post_thumbnail" name="post_thumbnail">
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col-lg">
                 <label for="post_link" class="form-label">Link Youtube</label>
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" id="post_link" placeholder="Youtube.com/(masukan link youtube)" name="post_link">
                 </div>
             </div>
-            <!-- <div class="col">
+            <!-- <div class="col-lg">
                 <label for="post_tag" class="form-label">Kategori / Tag</label>
                 <select class="form-control selectpicker" multiple>
                     <option value="1">One</option>

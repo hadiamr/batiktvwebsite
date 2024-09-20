@@ -17,7 +17,7 @@
             <input type="text" class="form-control" id="nama_program" placeholder="Masukan Nama Program" name="nama_program" value="<?= $program->nama_program ?>" required>
         </div>
         <div class="row">
-            <div class="col mb-3">
+            <div class="col-lg mb-3">
                 <label for="host1" class="form-label">Presenter / Host 1</label>
                 <select name="host1" class="form-select">
                     <option value="">--Pilih Host--</option>
@@ -30,7 +30,7 @@
                     endforeach; ?>
                 </select>
             </div>
-            <div class="col mb-3">
+            <div class="col-lg mb-3">
                 <label for="host2" class="form-label">Presenter / Host 2</label>
                 <select name="host2" class="form-select">
                     <option value="">--Pilih Host--</option>
@@ -43,7 +43,7 @@
                     endforeach; ?>
                 </select>
             </div>
-            <div class="col mb-3">
+            <div class="col-lg mb-3">
                 <label for="host3" class="form-label">Presenter / Host 3</label>
                 <select name="host3" class="form-select">
                     <option value="">--Pilih Host--</option>
@@ -56,7 +56,7 @@
                     endforeach; ?>
                 </select>
             </div>
-            <div class="col mb-3">
+            <div class="col-lg mb-3">
                 <label for="tim" class="form-label">Tim</label>
                 <select name="tim" class="form-select">
                     <option value="">--Pilih Tim--</option>
@@ -71,7 +71,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col mb-3">
+            <div class="col-lg mb-3">
                 <label for="cam1" class="form-label">Kameramen 1</label>
                 <select name="cam1" class="form-select">
                     <option value="">--Pilih Kameramen--</option>
@@ -84,7 +84,7 @@
                     endforeach; ?>
                 </select>
             </div>
-            <div class="col mb-3">
+            <div class="col-lg mb-3">
                 <label for="cam2" class="form-label">Kameramen 2</label>
                 <select name="cam2" class="form-select">
                     <option value="">--Pilih Kameramen--</option>
@@ -97,7 +97,7 @@
                     endforeach; ?>
                 </select>
             </div>
-            <div class="col mb-3">
+            <div class="col-lg mb-3">
                 <label for="cam3" class="form-label">Kameramen 3</label>
                 <select name="cam3" class="form-select">
                     <option value="">--Pilih Kameramen--</option>
@@ -110,7 +110,7 @@
                     endforeach; ?>
                 </select>
             </div>
-            <div class="col mb-3">
+            <div class="col-lg mb-3">
                 <label for="editor" class="form-label">Editor</label>
                 <select name="editor" class="form-select">
                     <option value="">--Pilih Editor--</option>

@@ -11,9 +11,9 @@
             </div>
         <?php } ?>
         <?= form_open_multipart(base_url('/profil/simpan/' . $profil->username)); ?>
-        <div class="col mb-3">
+        <div class="col-lg mb-3">
             <div class="row">
-                <div class="col-6 container ratio ratio-1x1">
+                <div class="col-lg-6 container ratio ratio-1x1">
                     <?php
                     if (!empty($profil->foto)) {
                         echo '<img src="' . base_url("../admin/img/user/$profil->foto") . '" width="100%" class="rounded">';
@@ -21,7 +21,7 @@
                         echo '<img src="' . base_url("../admin/img/user/profil.png") . '" width="100%" class="rounded">';
                     } ?>
                 </div>
-                <div class="col-6 container">
+                <div class="col-lg-6 container">
                     <div class="row mb-3">
                         <label for="nama_lengkap" class="form-label">Nama Lengkap</label>
                         <input type="text" class="form-control" id="nama_lengkap" placeholder="Masukan Nama Lengkap" name="nama_lengkap" value="<?= $profil->nama_lengkap ?>" required>

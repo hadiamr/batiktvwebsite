@@ -12,11 +12,11 @@
         <?php } ?>
         <form action="/mitra/simpan" method="POST" enctype="multipart/form-data">
             <div class="row">
-                <div class="col mb-3">
+                <div class="col-lg mb-3">
                     <label for="nama" class="form-label">Nama Mitra</label>
                     <input type="text" class="form-control" id="nama" placeholder="Masukan Nama Mitra" name="nama" value="" required>
                 </div>
-                <div class="col mb-3">
+                <div class="col-lg mb-3">
                     <label for="logo" class="form-label">Logo</label>
                     <input type="file" class="form-control" id="logo" name="logo" value="" required>
                 </div>

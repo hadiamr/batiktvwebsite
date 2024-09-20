@@ -1,7 +1,14 @@
 <!-- DataTables -->
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-dark">Data <?php echo $judulTemp ?> <a href="/tayang/pdf" class="btn btn-primary mx-2">Download PDF</a></h6>
+        <div class="row">
+            <div class="col">
+                <h6 class="d-flex my-2 font-weight-bold text-dark">Data <?php echo $judulTemp ?></h6>
+            </div>
+            <div class="col">
+                <a href="/tayang/pdf" class="d-flex float-right btn btn-primary">Download PDF</a>
+            </div>
+        </div>
     </div>
     <div class="card-body">
         <!--Isi -->
@@ -73,8 +80,8 @@
                                             <?php } ?>
                                             <td>
                                                 <div class="d-flex justify-content-center">
-                                                    <a href="/tayang/edit/<?= $row['id_tayang']; ?>" class="btn btn-primary mx-2">Edit</a>
-                                                    <a href="/tayang/hapus/<?= $row['id_tayang']; ?>" class="btn btn-primary">Hapus</a>
+                                                    <a href="/tayang/edit/<?= $row['id_tayang']; ?>" class="btn btn-primary mx-2"><i class="fa fa-pen-square"></i></a>
+                                                    <a href="/tayang/hapus/<?= $row['id_tayang']; ?>" class="btn btn-primary"><i class="fa fa-trash"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -115,8 +122,8 @@
                                             <?php } ?>
                                             <td>
                                                 <div class="d-flex justify-content-center">
-                                                    <a href="/tayang/edit/<?= $row['id_tayang']; ?>" class="btn btn-primary mx-2">Edit</a>
-                                                    <a href="/tayang/hapus/<?= $row['id_tayang']; ?>" class="btn btn-primary">Hapus</a>
+                                                    <a href="/tayang/edit/<?= $row['id_tayang']; ?>" class="btn btn-primary mx-2"><i class="fa fa-pen-square"></i></a>
+                                                    <a href="/tayang/hapus/<?= $row['id_tayang']; ?>" class="btn btn-primary"><i class="fa fa-trash"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -155,8 +162,8 @@
                                             <?php } ?>
                                             <td>
                                                 <div class="d-flex justify-content-center">
-                                                    <a href="/tayang/edit/<?= $row['id_tayang']; ?>" class="btn btn-primary mx-2">Edit</a>
-                                                    <a href="/tayang/hapus/<?= $row['id_tayang']; ?>" class="btn btn-primary">Hapus</a>
+                                                    <a href="/tayang/edit/<?= $row['id_tayang']; ?>" class="btn btn-primary mx-2"><i class="fa fa-pen-square"></i></a>
+                                                    <a href="/tayang/hapus/<?= $row['id_tayang']; ?>" class="btn btn-primary"><i class="fa fa-trash"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -198,8 +205,8 @@
                                             <?php } ?>
                                             <td>
                                                 <div class="d-flex justify-content-center">
-                                                    <a href="/tayang/edit/<?= $row['id_tayang']; ?>" class="btn btn-primary mx-2">Edit</a>
-                                                    <a href="/tayang/hapus/<?= $row['id_tayang']; ?>" class="btn btn-primary">Hapus</a>
+                                                    <a href="/tayang/edit/<?= $row['id_tayang']; ?>" class="btn btn-primary mx-2"><i class="fa fa-pen-square"></i></a>
+                                                    <a href="/tayang/hapus/<?= $row['id_tayang']; ?>" class="btn btn-primary"><i class="fa fa-trash"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -238,8 +245,8 @@
                                             <?php } ?>
                                             <td>
                                                 <div class="d-flex justify-content-center">
-                                                    <a href="/tayang/edit/<?= $row['id_tayang']; ?>" class="btn btn-primary mx-2">Edit</a>
-                                                    <a href="/tayang/hapus/<?= $row['id_tayang']; ?>" class="btn btn-primary">Hapus</a>
+                                                    <a href="/tayang/edit/<?= $row['id_tayang']; ?>" class="btn btn-primary mx-2"><i class="fa fa-pen-square"></i></a>
+                                                    <a href="/tayang/hapus/<?= $row['id_tayang']; ?>" class="btn btn-primary"><i class="fa fa-trash"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -281,8 +288,8 @@
                                             <?php } ?>
                                             <td>
                                                 <div class="d-flex justify-content-center">
-                                                    <a href="/tayang/edit/<?= $row['id_tayang']; ?>" class="btn btn-primary mx-2">Edit</a>
-                                                    <a href="/tayang/hapus/<?= $row['id_tayang']; ?>" class="btn btn-primary">Hapus</a>
+                                                    <a href="/tayang/edit/<?= $row['id_tayang']; ?>" class="btn btn-primary mx-2"><i class="fa fa-pen-square"></i></a>
+                                                    <a href="/tayang/hapus/<?= $row['id_tayang']; ?>" class="btn btn-primary"><i class="fa fa-trash"></i></a>
                                                 </div>
                                             </td>
                                         </tr>

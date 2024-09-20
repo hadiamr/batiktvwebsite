@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Batik TV Admin">
+    <meta name="author" content="Batik TV">
 
     <title><?php echo $judulTemp ?></title>
     <!-- Favicon-->
@@ -198,7 +198,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800"><?php echo $judulTemp ?></h1>
                         <?php if ($tambah !== "yes") { ?> <a href="
                             <?php if ($jenis == "produksi") { ?> /produksi/tambahJadwal
@@ -212,7 +212,7 @@
                             <?php } elseif ($jenis == "pengguna") { ?>/pengguna/tambah
                             <?php } elseif ($jenis == "tayangan") { ?>/tayangan/tambah
                             <?php } else { ?>/artikel/tambah
-                        <?php } ?>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                        <?php } ?>" class="d-sm-flex btn btn-sm btn-primary shadow-sm">
                                 <i class="fas fa-plus fa-sm text-white-50"></i> Tambah <?php echo $judulTemp ?></a>
                         <?php } ?>
                     </div>

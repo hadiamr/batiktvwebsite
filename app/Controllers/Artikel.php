@@ -194,7 +194,7 @@ class Artikel extends BaseController
             );
         }
         $model->insert($data);
-        return redirect()->to('/artikel/tambah')->with('berhasil', 'Data Berhasil disimpan');
+        return redirect()->to('/artikel/news')->with('berhasil', 'Data Berhasil disimpan');
     }
     function edit($post_id)
     {
