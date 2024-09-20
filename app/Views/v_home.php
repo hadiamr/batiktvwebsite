@@ -86,9 +86,9 @@
                                 <a href="/news/<?= $row['post_title_seo']; ?>">
                                     <?php
                                     if (!empty($row['post_thumbnail'])) {
-                                        echo '<img src="' . base_url("../home/assets/img/news/$row[post_thumbnail]") . '" width="100%">';
+                                        echo '<img src="' . base_url("../home/assets/img/news/$row[post_thumbnail]") . '" width="100%" alt=' . $row->post_title . '>';
                                     } else {
-                                        echo '<img src="' . base_url("../home/assets/img/btv.png") . '" width="100%">';
+                                        echo '<img src="' . base_url("../home/assets/img/btv.png") . '" width="100%" alt=' . $row->post_title . '>';
                                     }
                                     ?>
                                 </a>
@@ -111,9 +111,9 @@
                                             <div class="position-relative rounded overflow-hidden ratio ratio-16x9">
                                                 <?php
                                                 if (!empty($row['post_thumbnail'])) {
-                                                    echo '<img src="' . base_url("../home/assets/img/news/$row[post_thumbnail]") . '" width="100%">';
+                                                    echo '<img src="' . base_url("../home/assets/img/news/$row[post_thumbnail]") . '" width="100%" alt=' . $row->post_title . '>';
                                                 } else {
-                                                    echo '<img src="' . base_url("../home/assets/img/btv.png") . '" width="100%">';
+                                                    echo '<img src="' . base_url("../home/assets/img/btv.png") . '" width="100%" alt=' . $row->post_title . '>';
                                                 }
                                                 ?>
                                             </div>
@@ -270,7 +270,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 mb-5 py-3">
-                    <a target="_blank" href="https://pasirkencana.pekalongankota.go.id/"><img class="img-fluid rounded iklan" src="../home/assets/img/iklan/pasirkencana.jpg"></a>
+                    <a target="_blank" href="https://pasirkencana.pekalongankota.go.id/"><img class="img-fluid rounded iklan" src="../home/assets/img/iklan/pasirkencana.jpg" alt="Banner Iklan"></a>
                 </div>
             </div>
         </div>
@@ -285,7 +285,8 @@
                 <div class="slide mx-3 mt-2">
                     <?php
                     if (!empty($row->logo)) {
-                        echo '<img src="' . base_url("../admin/img/mitra/$row->logo") . '" width="100">';
+                        echo '<img src="' . base_url("../admin/img/mitra/$row->logo") . '" width="100" alt=' . $row->post_title .
+                            '>';
                     } ?>
                 </div>
             <?php endforeach; ?>

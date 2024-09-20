@@ -244,9 +244,11 @@
                                         <div class="ratio ratio-16x9 position-relative rounded overflow-hidden">
                                             <?php
                                             if (!empty($row['post_thumbnail'])) {
-                                                echo '<img src="' . base_url("../home/assets/img/news/$row[post_thumbnail]") . '" width="100%">';
+                                                echo '<img src="' . base_url("../home/assets/img/news/$row[post_thumbnail]") . '" width="100%" alt=' . $row['post_title'] .
+                                                    '>';
                                             } else {
-                                                echo '<img src="' . base_url("../home/assets/img/btv.png") . '" width="100%">';
+                                                echo '<img src="' . base_url("../home/assets/img/btv.png") . '" width="100%" alt=' . $row['post_title'] .
+                                                    '>';
                                             }
                                             ?>
                                         </div>
@@ -267,8 +269,8 @@
                         </div>
                     </div>
                 </div>
-                <img class="img-fluid rounded mb-4" src="../../../home/assets/img/iklan/pasirkencana.jpg">
-                <img class="img-fluid rounded" src="../../../home/assets/img/banner4.png">
+                <img class="img-fluid rounded mb-4" src="../../../home/assets/img/iklan/pasirkencana.jpg" alt="Banner Iklan">
+                <img class="img-fluid rounded" src="../../../home/assets/img/banner4.png" alt="Banner Iklan">
             </div>
         </div>
     </div>

@@ -129,9 +129,11 @@
                                         <div class="ratio ratio-16x9 position-relative rounded overflow-hidden">
                                             <?php
                                             if (!empty($row['post_thumbnail'])) {
-                                                echo '<img src="' . base_url("../home/assets/img/news/$row[post_thumbnail]") . '" width="100%">';
+                                                echo '<img src="' . base_url("../home/assets/img/news/$row[post_thumbnail]") . '" width="100%" alt=' . $row['post_title'] .
+                                                    '>';
                                             } else {
-                                                echo '<img src="' . base_url("../home/assets/img/btv.png") . '" width="100%">';
+                                                echo '<img src="' . base_url("../home/assets/img/btv.png") . '" width="100%" alt=' . $row['post_title'] .
+                                                    '>';
                                             }
                                             ?>
                                         </div>

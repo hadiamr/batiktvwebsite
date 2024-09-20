@@ -9,9 +9,11 @@
                                 <a href="/news/<?= $row->post_title_seo; ?>">
                                     <?php
                                     if (!empty($row->post_thumbnail)) {
-                                        echo '<img src="' . base_url("../home/assets/img/news/$row->post_thumbnail") . '" width="100%" height="100%">';
+                                        echo '<img src="' . base_url("../home/assets/img/news/$row->post_thumbnail") . '" width="100%" height="100%" alt=' . $row->post_title .
+                                            '>';
                                     } else {
-                                        echo '<img src="' . base_url("../home/assets/img/btv.png") . '" width="100%" height="100%">';
+                                        echo '<img src="' . base_url("../home/assets/img/btv.png") . '" width="100%" height="100%" alt=' . $row->post_title .
+                                            '>';
                                     }
                                     ?>
                                 </a>
@@ -114,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <img class="img-fluid rounded" src="../../../home/assets/img/iklan/pasirkencana.jpg">
+                <img class="img-fluid rounded" src="../../../home/assets/img/iklan/pasirkencana.jpg" alt="Banner">
             </div>
         </div>
     </div>
