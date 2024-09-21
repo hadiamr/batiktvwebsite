@@ -38,7 +38,7 @@
             <p class="artikel">Bagikan artikel:
             <div class="sharethis-inline-share-buttons"></div>
             </p>
-            <img class="img-fluid rounded mt-3" src="../../../home/assets/img/banner4.png">
+            <img class="img-fluid rounded mt-3" src="../../../home/assets/img/banner4.png" alt="Banner Iklan">
         </div>
         <div class="col-lg-4">
             <div class="bg-light rounded p-4 pt-0 mb-4">
