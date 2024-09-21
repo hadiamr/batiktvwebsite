@@ -266,7 +266,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 mb-5 py-3">
-                    <a target="_blank" href="https://pasirkencana.pekalongankota.go.id/"><img class="img-fluid rounded iklan" src="../home/assets/img/iklan/pasirkencana.jpg" alt="Banner Iklan"></a>
+                    <a target="_blank" href="https://pasirkencana.pekalongankota.go.id/"><img class="img-fluid rounded iklan" src="../home/assets/img/iklan/pasirkencana.webp" alt="Banner Iklan"></a>
                 </div>
             </div>
         </div>
