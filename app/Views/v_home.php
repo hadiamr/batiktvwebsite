@@ -63,7 +63,7 @@
                 </div>
             </div>
             <div class="col-lg-5">
-                <img class="img-fluid" src="<?php echo base_url('home') ?>/assets/img/build.png" alt="..." />
+                <img class="img-fluid" src="<?php echo base_url('home') ?>/assets/img/build.webp" alt="..." />
             </div>
         </div>
     </header>

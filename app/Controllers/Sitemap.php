@@ -11,6 +11,6 @@ class Sitemap extends BaseController
     {
         $model = new NewsModel();
         $data['url'] = $model->get()->getResultArray();
-        echo view('sitemap', $data);
+        echo view('sitemap.xml', $data);
     }
 }
