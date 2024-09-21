@@ -14,10 +14,10 @@
             <!-- Footer Social Icons-->
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <h4 class="text-uppercase mb-4">Media Sosial</h4>
-                <a target="_blank" class="btn btn-outline-light btn-social mx-1" href="<?= $setelan->facebook ?>"><i class="fab fa-fw fa-facebook-f"></i></a>
-                <a target="_blank" class="btn btn-outline-light btn-social mx-1" href="<?= $setelan->twitter ?>"><i class="fab fa-fw fa-twitter"></i></a>
-                <a target="_blank" class="btn btn-outline-light btn-social mx-1" href="<?= $setelan->instagram ?>"><i class="fab fa-fw fa-instagram"></i></a>
-                <a target="_blank" class="btn btn-outline-light btn-social mx-1" href="<?= $setelan->youtube ?>"><i class="fab fa-fw fa-youtube"></i></a>
+                <a target="_blank" class="btn btn-outline-light btn-social mx-1" aria-label="Facebook" href="<?= $setelan->facebook ?>"><i class="fab fa-fw fa-facebook-f"></i></a>
+                <a target="_blank" class="btn btn-outline-light btn-social mx-1" aria-label="Twitter" href="<?= $setelan->twitter ?>"><i class="fab fa-fw fa-twitter"></i></a>
+                <a target="_blank" class="btn btn-outline-light btn-social mx-1" aria-label="Instagram" href="<?= $setelan->instagram ?>"><i class="fab fa-fw fa-instagram"></i></a>
+                <a target="_blank" class="btn btn-outline-light btn-social mx-1" aria-label="Youtube" href="<?= $setelan->youtube ?>"><i class="fab fa-fw fa-youtube"></i></a>
             </div>
             <!-- Footer Jangkauan -->
             <div class="col-lg-4">
