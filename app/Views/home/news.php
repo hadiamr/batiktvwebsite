@@ -112,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-                <img class="img-fluid rounded" src="../../../home/assets/img/iklan/pasirkencana.webp" alt="Banner Iklan">
+                <img class="img-fluid rounded" src="../../../home/assets/img/iklan/TWL.webp" alt="Banner Iklan">
             </div>
         </div>
     </div>
