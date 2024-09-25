@@ -35,7 +35,11 @@ $routes->get('/', 'Home::index');
 $routes->get('logout', 'Login::logout');
 
 /** Artikel */
-$routes->get('/(:any)', 'Menu::$1');
+$routes->get('/news', 'Menu::news');
+$routes->get('/program', 'Menu::program');
+$routes->get('/jadwal', 'Menu::jadwal');
+$routes->get('/profil', 'Menu::profil');
+$routes->get('/live', 'Menu::live');
 $routes->add('/news/(:any)', 'Artikel::view/$1');
 $routes->get('/sitemap.xml', 'Sitemap::index');
 
