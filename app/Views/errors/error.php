@@ -1,4 +1,5 @@
 <link href="<?php echo base_url('home') ?>/css/styles.css" rel="stylesheet" />
+<title>Error 404</title>
 <div class="text-center">
     <img class="mt-4" src="<?php echo base_url('home') ?>/assets/img/error.svg" alt="Error"></a>
     <div>
