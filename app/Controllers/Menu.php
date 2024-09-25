@@ -195,4 +195,52 @@ class Menu extends BaseController
         echo view('home/profil', $data);
         echo view('home/footer', $data);
     }
+
+    public function live()
+    {
+        $model = new NewsModel();
+        $model2 = new TayangMod();
+        $model3 = new SetelanModel();
+
+        $tanggal  = date('D');
+        $data['title'] = 'Batik TV Live';
+        $data['logo'] = '/assets/img/logo.svg';
+        $data['lebar'] = '160';
+        $data['setelan'] = $model3->getWhere(['id' => 1])->getRow();
+
+        switch ($tanggal) {
+            case 'Mon':
+                $query = $model2->where('hari', 'senin');
+                $data['hari'] = 'Senin';
+                break;
+            case 'Tue':
+                $query = $model2->where('hari', 'selasa');
+                $data['hari'] = 'Selasa';
+                break;
+            case 'Wed':
+                $query = $model2->where('hari', 'rabu');
+                $data['hari'] = 'Rabu';
+                break;
+            case 'Thu':
+                $query = $model2->where('hari', 'kamis');
+                $data['hari'] = 'Kamis';
+                break;
+            case 'Fri':
+                $query = $model2->where('hari', 'jumat');
+                $data['hari'] = 'Jumat';
+                break;
+            case 'Sat':
+                $query = $model2->where('hari', 'sabtu');
+                $data['hari'] = 'Sabtu';
+                break;
+            case 'Sun':
+                $query = $model2->where('hari', 'minggu');
+                $data['hari'] = 'Minggu';
+                break;
+        }
+        $data['tayang'] = $query->orderBy('jam', 'ASC')->findAll();
+        echo view('home/header', $data);
+        echo view('home/live', $data);
+        echo view('home/footer', $data);
+    }
 }

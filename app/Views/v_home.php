@@ -30,7 +30,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/">
                             <i class="fas fa-home"></i> Home</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/news">
                             <i class="fas fa-newspaper"></i> Berita</a></li>
@@ -40,6 +40,14 @@
                             <i class="fas fa-calendar"></i> Jadwal</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/profil">
                             <i class="fas fa-landmark"></i> Profil</a></li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-2 px-0 px-lg-3" href="/live">
+                            <div class="btn-live">
+                                <div class="spinner-grow spinner-grow-sm text-danger" role="status"></div>
+                                LIVE
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

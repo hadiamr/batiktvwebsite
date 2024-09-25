@@ -176,7 +176,7 @@
                     </div>
                 </div>
                 <a target="_blank" href="https://pasirkencana.pekalongankota.go.id/"><img class="img-fluid rounded iklan mb-4" src="../home/assets/img/iklan/TWL.webp" alt="Banner Iklan"></a>
-                <img class="img-fluid rounded" src="../../../home/assets/img/banner4.png" alt="Banner Iklan">
+                <!-- <img class="img-fluid rounded" src="../../../home/assets/img/banner4.png" alt="Banner Iklan"> -->
             </div>
         </div>
     </div>
