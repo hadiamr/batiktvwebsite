@@ -14,7 +14,7 @@
                     </div>
                     <div class="text-center mb-2 rounded">
                         <!-- <img class="rounded img-fluid" src="<?php echo base_url('home') ?>/assets/img/btv.png" alt="..." width="98%"> -->
-                        <iframe width="820" height="462" src="https://www.youtube.com/embed/SI-7Jkr9ra8?autoplay=1&autohide=0&controls=0&disablekb=0&modestbranding=0&fs=0&rel=0&showinfo=0&enablejsapi=0&origin=https%3A%2F%2Fwww.batiktv.id&widgetid=0" title="Live Streaming" frameborder="0" allow="autoplay;"></iframe>
+                        <iframe width="820" height="461" src="https://www.youtube.com/embed/live_stream?channel=UCfVhsa1PMBkqYQOqIojVjPA&autoplay=1&controls=0" frameborder="0" allowfullscreen allow="autoplay;"></iframe>
                     </div>
                     <div class="customer-logos slider">
                         <?php
