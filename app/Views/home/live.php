@@ -11,10 +11,16 @@
                         <div class="divider-full bg-campur rounded mb-3" style="height: 0.25rem; max-width: 8rem;"></div>
                     </div>
                     <div class="px-2">
-                        <div class="ratio ratio-16x9 position-relative rounded overflow-hidden mb-4">
-                            <!-- <img class="rounded img-fluid" src="<?php echo base_url('home') ?>/assets/img/btv.png" alt="..." width="98%"> -->
-                            <iframe src="https://www.youtube.com/embed/live_stream?channel=UCfVhsa1PMBkqYQOqIojVjPA&autoplay=1&controls=0" frameborder="0" allowfullscreen allow="autoplay;"></iframe>
-                        </div>
+                        <?php if ($jam <= "21:00" && $jam >= "09:00") { ?>
+                            <div class="ratio ratio-16x9 position-relative rounded overflow-hidden mb-4">
+                                <!-- <img class="rounded img-fluid" src="<?php echo base_url('home') ?>/assets/img/btv.png" alt="..." width="98%"> -->
+                                <iframe src="https://www.youtube.com/embed/live_stream?channel=UCfVhsa1PMBkqYQOqIojVjPA&autoplay=1&controls=0" frameborder="0" allowfullscreen allow="autoplay;"></iframe>
+                            </div>
+                        <?php } else { ?>
+                            <div class="text-center">
+                                <img class="mb-4 py-4 mx-4 py-4" src="<?php echo base_url('home') ?>/assets/img/stream.svg" alt="Streaming" width="70%"></a>
+                            </div>
+                        <?php } ?>
                     </div>
                     <hr>
                     <div class="customer-logos slider">

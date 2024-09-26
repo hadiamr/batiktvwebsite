@@ -202,6 +202,7 @@ class Menu extends BaseController
         $model3 = new SetelanModel();
 
         $tanggal  = date('D');
+        $data['jam']  = date('H:i');
         $data['title'] = 'Batik TV Live';
         $data['logo'] = '/assets/img/logo.svg';
         $data['lebar'] = '160';
