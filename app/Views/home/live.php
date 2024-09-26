@@ -52,6 +52,7 @@
                         </div>
                     </div>
                 </div>
+                <img class="img-fluid rounded" src="../../../home/assets/img/banner4.png" alt="Banner Iklan">
             </div>
         </div>
     </div>
