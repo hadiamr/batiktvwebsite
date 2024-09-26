@@ -289,7 +289,7 @@
                 <div class="slide mx-3 mt-2">
                     <?php
                     if (!empty($row->logo)) : ?>
-                        <img src="<?= base_url('../admin/img/mitra/' . $row->logo) ?>" width="100" alt="Logo <?= $row->nama ?>" labelForId="Logo <?= $row->nama ?>" aria-label="Logo <?= $row->nama ?>">
+                        <img src="<?= base_url('../admin/img/mitra/' . $row->logo) ?>" width="100" alt="Logo <?= $row->nama ?>" title="Logo <?= $row->nama ?>" aria-label="Logo <?= $row->nama ?>">
                     <?php endif; ?>
                 </div>
             <?php endforeach; ?>
