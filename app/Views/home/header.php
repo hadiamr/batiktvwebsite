@@ -40,11 +40,16 @@
                             <i class="fas fa-calendar"></i> Jadwal</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/profil">
                             <i class="fas fa-landmark"></i> Profil</a></li>
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link px-0 px-lg-3" href="/live">
+                    <li class="nav-item mx-0 mx-lg-1 d-flex">
+                        <a class="nav-link px-0 ps-lg-3" href="/live">
                             <div class="btn-live">
                                 <div class="spinner-grow spinner-grow-sm text-danger" role="status"></div>
                                 LIVE
+                            </div>
+                        </a>
+                        <a class="nav-link px-0" href="/agency">
+                            <div class="btn-agency">
+                                <i class="fas fa-search"></i> Agency
                             </div>
                         </a>
                     </li>

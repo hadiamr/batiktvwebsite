@@ -198,7 +198,6 @@ class Menu extends BaseController
 
     public function live()
     {
-        $model = new NewsModel();
         $model2 = new TayangMod();
         $model3 = new SetelanModel();
 
@@ -241,6 +240,19 @@ class Menu extends BaseController
         $data['tayang'] = $query->orderBy('jam', 'ASC')->findAll();
         echo view('home/header', $data);
         echo view('home/live', $data);
+        echo view('home/footer', $data);
+    }
+    public function agency()
+    {
+        $model = new SetelanModel();
+
+        $data['title'] = 'Batik TV Agency';
+        $data['logo'] = '/assets/img/logo.svg';
+        $data['lebar'] = '160';
+        $data['setelan'] = $model->getWhere(['id' => 1])->getRow();
+
+        echo view('home/header', $data);
+        echo view('home/agency', $data);
         echo view('home/footer', $data);
     }
 }

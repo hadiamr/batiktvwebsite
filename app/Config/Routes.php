@@ -40,6 +40,7 @@ $routes->get('/program', 'Menu::program');
 $routes->get('/jadwal', 'Menu::jadwal');
 $routes->get('/profil', 'Menu::profil');
 $routes->get('/live', 'Menu::live');
+$routes->get('/agency', 'Menu::agency');
 $routes->add('/news/(:any)', 'Artikel::view/$1');
 $routes->get('/sitemap.xml', 'Sitemap::index');
 

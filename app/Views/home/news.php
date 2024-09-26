@@ -6,7 +6,7 @@
                     <?php foreach ($news as $row) : ?>
                         <div class="col-lg-6 pb-4">
                             <div class="position-relative rounded overflow-hidden ratio ratio-16x9">
-                                <a href="/news/<?= $row->post_title_seo; ?>">
+                                <a class="thumbnail" href="/news/<?= $row->post_title_seo; ?>">
                                     <?php if (!empty($row->post_thumbnail)) { ?>
                                         <img src="<?= base_url("../home/assets/img/news/$row->post_thumbnail") ?>" width="100%" height="100%" alt='<?= $row->post_title ?>'>
                                     <?php } else { ?>
