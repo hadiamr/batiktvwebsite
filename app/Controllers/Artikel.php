@@ -132,7 +132,6 @@ class Artikel extends BaseController
             if ($data['news2'] = $model->where('post_type', 'article')->orderBy('post_id', 'DESC')) {
                 $data['news2'] = $model->where('post_status', 'Aktif')->whereNotIn('post_id', [$data['news']->post_id])->findAll(10);
             }
-            echo view('home/header', $data);
             echo view('home/artikel', $data);
             echo view('home/footer', $data);
         }
