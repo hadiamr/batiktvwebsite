@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="google-adsense-account" content="ca-pub-6947664556061935">
-    <meta name="description" content="Temukan informasi terkini, analisis mendalam, dan cerita inspiratif tentang peristiwa lokal, budaya, dan perkembangan masyarakat Pekalongan dan sekitarnya" />
+    <meta name="description" content="<?= $news->post_content; ?>" />
     <meta name="author" content="Batik TV" />
     <title><?php echo $title; ?></title>
     <!-- Favicon-->
