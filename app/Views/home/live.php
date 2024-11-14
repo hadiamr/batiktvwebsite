@@ -18,7 +18,7 @@
                             </div>
                         <?php } else { ?>
                             <div class="text-center">
-                                <img class="mb-4 py-4 mx-4 py-4" src="<?php echo base_url('home') ?>/assets/img/stream.svg" alt="Streaming" width="70%"></a>
+                                <img class="mb-4 py-4 mx-4 py-4" src="<?php echo base_url('home') ?>/assets/img/stream.svg" alt="Streaming" width="70%">
                             </div>
                         <?php } ?>
                     </div>

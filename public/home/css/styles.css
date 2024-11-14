@@ -95,7 +95,6 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
 .scroll-table{
   position: relative;
   height: 260px;
@@ -143,6 +142,9 @@ color:#B3B3B3
 }
 .campur{
   color: linear-gradient(90deg, rgba(2,49,93,1) 0%, rgba(47,112,175,1) 100%);
+}
+.bg-birutrans{
+  background: linear-gradient(0deg, rgba(2,49,93,1) 0%, rgba(47, 111, 175, 0) 100%);
 }
 .bg-biru {
   background-color: #02315D;
@@ -681,6 +683,7 @@ progress {
   transition: transform 0.5s ease;
   transform-origin: center;
   filter: saturate(1);
+  object-fit: cover;
 }
 .thumbnail:hover {
   transform: scale(1.2) rotate(5deg);
@@ -3354,7 +3357,7 @@ textarea.form-control-lg {
   border-color: #f9fafb;
 }
 .btn-live:hover{
-  color: #4087ce;
+  color: #205a93;
   background:#fff;
   border-color: #fff;
 }
