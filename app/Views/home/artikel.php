@@ -9,7 +9,10 @@
     <meta name="author" content="Batik TV" />
     <title><?php echo $title; ?></title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="<?php echo base_url('home') ?>/assets/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="<?= base_url('home') ?>/assets/favicon.png" />
+    <!-- Meta -->
+    <meta property="og:title" content="<?php echo $title; ?>" />
+    <meta property="og:description" content="<?= substr($news->post_content, 0, 70) ?>" />
     <meta property="og:image" content="<?= base_url("../home/assets/img/news/$news->post_thumbnail") ?>" />
     <!-- Font Awesome icons-->
     <link href="<?php echo base_url('admin') ?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
