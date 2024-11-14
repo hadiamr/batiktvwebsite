@@ -12,7 +12,6 @@
     <link rel="icon" type="image/x-icon" href="<?= base_url('home') ?>/assets/favicon.png" />
     <!-- Meta -->
     <meta property="og:title" content="<?php echo $title; ?>" />
-    <meta property="og:description" content="<?= $news->post_content; ?>" />
     <meta property="og:image" content="<?= base_url("../home/assets/img/news/$news->post_thumbnail") ?>" />
     <!-- Font Awesome icons-->
     <link href="<?php echo base_url('admin') ?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
