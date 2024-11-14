@@ -5,13 +5,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="google-adsense-account" content="ca-pub-6947664556061935">
-    <meta name="description" content="<?= substr($news->post_content, 0, 70) ?> ..." />
+    <meta name="description" content="Temukan informasi terkini, analisis mendalam, dan cerita inspiratif tentang peristiwa lokal, budaya, dan perkembangan masyarakat Pekalongan dan sekitarnya" />
     <meta name="author" content="Batik TV" />
     <title><?php echo $title; ?></title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="<?= base_url('home') ?>/assets/favicon.png" />
     <!-- Meta -->
     <meta property="og:title" content="<?php echo $title; ?>" />
+    <meta property="og:description" content="<?= $news->post_content; ?>" />
     <meta property="og:image" content="<?= base_url("../home/assets/img/news/$news->post_thumbnail") ?>" />
     <!-- Font Awesome icons-->
     <link href="<?php echo base_url('admin') ?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
