@@ -24,7 +24,7 @@
             <div class="col-lg">
                 <div class="spinner-border spinner-border-sm biru" role="status">
                     <span class="sr-only"></span>
-                </div> Tunggu update selanjutnya...
+                </div> Halaman belum tersedia
             </div>
             <br><br><br><br><br><br><br><br><br><br><br>
         </div>
