@@ -39,7 +39,7 @@ class Artikel extends BaseController
                 $query
                     ->like('post_time', $bulan);
             }
-            $data['news'] = $query->orderBy('post_id', 'DESC')->asObject()->paginate(15, 'no');
+            $data['news'] = $query->orderBy('post_id', 'DESC')->asObject()->paginate(25, 'no');
             $data['pager'] = $model->pager;
             echo view('admin/v_header', $data);
             echo view('admin/v_news', $data);
