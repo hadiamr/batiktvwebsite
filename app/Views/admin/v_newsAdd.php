@@ -35,7 +35,7 @@
                 <select name="driver" class="form-select">
                     <option value="">--Pilih Penulis--</option>
                     <?php foreach ($penulis as $row) : ?>
-                        <option value="<?= $row['username']; ?>"><?= $row['username']; ?></option>
+                        <option value="<?= $row['nama_lengkap']; ?>"><?= $row['nama_lengkap']; ?></option>
                     <?php endforeach; ?>
                 </select>
                 <!-- <input type="text" class="form-control" id="author" placeholder="Author" name="author" value="<?php echo session()->get('akun_nama_lengkap') ?>" readonly> -->
