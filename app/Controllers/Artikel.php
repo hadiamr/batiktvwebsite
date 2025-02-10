@@ -143,6 +143,7 @@ class Artikel extends BaseController
         $data['admin'] = $model->getAdmin();
         $data['tambah'] = "yes";
         $data['judulTemp'] = "Tambah Artikel / Halaman";
+        $data['penulis'] = $model->where("role = 'admin' OR role = 'wartawan'")->orderBy('nama_lengkap', 'ASC')->findAll();
         echo view('admin/v_header', $data);
         echo view('admin/v_newsAdd', $data);
         echo view('admin/v_footer', $data);

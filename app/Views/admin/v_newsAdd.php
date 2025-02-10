@@ -32,7 +32,13 @@
             </div>
             <div class="col-lg mb-3">
                 <label for="author" class="form-label">Penulis</label>
-                <input type="text" class="form-control" id="author" placeholder="Author" name="author" value="<?php echo session()->get('akun_nama_lengkap') ?>" readonly>
+                <select name="driver" class="form-select">
+                    <option value="">--Pilih Penulis--</option>
+                    <?php foreach ($penulis as $row) : ?>
+                        <option value="<?= $row['username']; ?>"><?= $row['username']; ?></option>
+                    <?php endforeach; ?>
+                </select>
+                <!-- <input type="text" class="form-control" id="author" placeholder="Author" name="author" value="<?php echo session()->get('akun_nama_lengkap') ?>" readonly> -->
             </div>
         </div>
         <div class="mb-3">
