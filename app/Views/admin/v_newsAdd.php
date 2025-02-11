@@ -31,8 +31,8 @@
                 </select>
             </div>
             <div class="col-lg mb-3">
-                <label for="author" class="form-label">Penulis</label>
-                <select name="driver" class="form-select">
+                <label for="penulis" class="form-label">Penulis</label>
+                <select name="penulis" class="form-select">
                     <option value="">--Pilih Penulis--</option>
                     <?php foreach ($penulis as $row) : ?>
                         <option value="<?= $row['nama_lengkap']; ?>"><?= $row['nama_lengkap']; ?></option>

@@ -32,8 +32,17 @@
                 </select>
             </div>
             <div class="col-lg mb-3">
-                <label for="author" class="form-label">Penulis</label>
-                <input type="text" class="form-control" id="author" placeholder="Author" name="author" value="<?= $news->author ?>" readonly>
+                <label for="penulis" class="form-label">Penulis</label>
+                <select name="penulis" class="form-select">
+                    <option value="">-</option>
+                    <?php foreach ($penulis as $row) : ?>
+                        <?php if ($news->author == $row['nama_lengkap']) { ?>
+                            <option value="<?= $row['nama_lengkap']; ?>" selected><?= $row['nama_lengkap']; ?></option>
+                        <?php } else { ?>
+                            <option value="<?= $row['nama_lengkap']; ?>"><?= $row['nama_lengkap']; ?></option>
+                    <?php }
+                    endforeach; ?>
+                </select>
             </div>
         </div>
         <?php

@@ -174,7 +174,7 @@ class Artikel extends BaseController
                 // 'tag' => $this->request->getPost('tag'),
                 'post_status' => $this->request->getPost('post_status'),
                 'post_type' => $this->request->getPost('post_type'),
-                'author' => session()->get('akun_nama_lengkap'),
+                'author' => $this->request->getPost('penulis'),
                 'post_link' => $this->request->getPost('post_link'),
                 'post_content' => $this->request->getPost('post_content')
             );
@@ -187,7 +187,7 @@ class Artikel extends BaseController
                 // 'tag' => $this->request->getPost('tag'),
                 'post_status' => $this->request->getPost('post_status'),
                 'post_type' => $this->request->getPost('post_type'),
-                'author' => session()->get('akun_nama_lengkap'),
+                'author' => $this->request->getPost('penulis'),
                 'post_link' => $this->request->getPost('post_link'),
                 'post_content' => $this->request->getPost('post_content'),
                 'post_thumbnail' => $upload->getName()
@@ -199,9 +199,11 @@ class Artikel extends BaseController
     function edit($post_id)
     {
         $model = new NewsModel();
+        $model2 = new AdminModel();
         helper('form');
         $data['tambah'] = "yes";
         $data['news'] = $model->getWhere(['post_id' => $post_id])->getRow();
+        $data['penulis'] = $model2->where("role = 'admin' OR role = 'wartawan'")->orderBy('nama_lengkap', 'ASC')->findAll();
         $data['judulTemp'] = "Edit Artikel / Halaman";
         echo view('admin/v_header', $data);
         echo view('admin/v_newsEdit', $data);
@@ -231,6 +233,7 @@ class Artikel extends BaseController
                 // 'tag' => $this->request->getPost('tag'),
                 'post_status' => $this->request->getPost('post_status'),
                 'post_type' => $this->request->getPost('post_type'),
+                'author' => $this->request->getPost('penulis'),
                 'post_link' => $this->request->getPost('post_link'),
                 'post_content' => $this->request->getPost('post_content')
             );
@@ -247,6 +250,7 @@ class Artikel extends BaseController
                 // 'tag' => $this->request->getPost('tag'),
                 'post_status' => $this->request->getPost('post_status'),
                 'post_type' => $this->request->getPost('post_type'),
+                'author' => $this->request->getPost('penulis'),
                 'post_link' => $this->request->getPost('post_link'),
                 'post_content' => $this->request->getPost('post_content'),
                 'post_thumbnail' => $upload->getName()
